@@ -566,7 +566,7 @@ body.project-page .header_menu-search__icon_wrap {
   display: flex;
   position: relative;
   align-items: center;
-  padding: 30px 49px 35px;
+  padding: 30px 49px 65px;
   background: #FFFFFF;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -579,8 +579,12 @@ body.project-page .header_menu-search__icon_wrap {
 
 .socials_item.-blue {
   background: #3D83C0;
-
 }
+
+.socials_item:last-child {
+  padding-bottom: 35px;
+}
+
 
 .socials_icon__wrap {
   margin-right: 20px;
