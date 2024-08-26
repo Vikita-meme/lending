@@ -299,7 +299,7 @@ body.project-page .header_menu-search__icon_wrap {
   display: block;
   position: relative;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 21px;
 }
 
 .main_subtitle-title {
@@ -316,6 +316,36 @@ body.project-page .header_menu-search__icon_wrap {
 
 .main_subtitle-title .-yellow {
   color: #EED151;
+}
+
+.main-btn__wrap {
+  display: block;
+  margin-top: 45px;
+}
+
+.main-btn__container {
+  display: block;
+  padding: 3px;
+  background: linear-gradient(91.36deg, #E40592 0%, #EED151 100%);
+  border-radius: 8px;
+}
+
+.main-btn {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  background: #000000;
+  border-radius: 8px;
+}
+
+.main-btn__title {
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #E40592;
+  text-transform: uppercase;
 }
 /* main title */
 
