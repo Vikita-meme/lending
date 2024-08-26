@@ -565,6 +565,7 @@ body.project-page .header_menu-search__icon_wrap {
 .socials_item {
   display: flex;
   position: relative;
+  align-items: center;
   padding: 30px 49px 35px;
   background: #FFFFFF;
   border-top-left-radius: 30px;
