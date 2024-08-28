@@ -251,8 +251,8 @@ body.project-page .nav-link {
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: absolute;
-  right: 0px;
-  top: 4px;
+  right: 10px;
+  top: 12px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -268,8 +268,8 @@ body.project-page .nav-link {
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
   position: absolute;
-  right: 0px;
-  top: 4px;
+  right: 10px;
+  top: 12px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
@@ -405,11 +405,12 @@ body.project-page .header_menu-search__icon_wrap {
   position: relative;
   background: linear-gradient(91.36deg, #E40592 0%, #EED151 100%);
   border-radius: 8px;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .main-btn__container:hover {
   opacity: 0.8;
+  background: linear-gradient(91.36deg, #EED151 0%, #E40592 100%);
 }
 
 .main-btn {
