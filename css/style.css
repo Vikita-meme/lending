@@ -152,12 +152,6 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 
 .navbar-nav li {
   flex: 1 1 auto;
-  padding-bottom: 10px;
-  padding-top: 15px;
-}
-
-.navbar-nav li.current-menu-item {
-  border-bottom: 4px solid #fff;
 }
 
 body.project-page .navbar-nav li.current-menu-item {
@@ -180,7 +174,6 @@ body.project-page .navbar-nav li.current-menu-item {
   color: #fff;
   padding: 5px 0;
   text-transform: uppercase;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 body.project-page .nav-link {
