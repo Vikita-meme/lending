@@ -99,7 +99,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 .header_lang-items {
   position: absolute;
   display: none;
-  top: 2.1875rem;
+  margin-top: 10px;
   width: 10.75rem;
   background: #fff;
   border: 1px solid #fff;
