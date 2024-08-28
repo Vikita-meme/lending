@@ -750,6 +750,11 @@ body.project-page .header_menu-search__icon_wrap {
   height: 20px;
   width: auto;
 }
+
+.footer_socials__icon.-tg {
+  margin-top: 2px;
+  margin-left: -5px;
+}
 /**/
 
 /* common media */
