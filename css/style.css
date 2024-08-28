@@ -139,6 +139,9 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 
 .header_lang-wrap:hover .header_lang-items {
   display: block;
+  max-height: 145px;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .navbar {
