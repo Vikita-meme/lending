@@ -80,6 +80,10 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   font-weight: 600;
 }
 
+.header_lang-item:hover {
+  background: rgb(238, 189, 92, 0.5);
+}
+
 .header_lang-current {
   display: grid;
   grid-template-columns: -webkit-max-content auto;
@@ -102,7 +106,6 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   margin-top: 10px;
   width: 10.75rem;
   background: #fff;
-  border: 1px solid #fff;
   box-shadow: 0 .75rem 1.875rem rgba(0, 0, 0, .1);
   border-radius: 5px;
   z-index: 101;
@@ -361,7 +364,7 @@ body.project-page .header_menu-search__icon_wrap {
   margin: 0;
   font-size: 35px;
   font-weight: 900;
-  line-height: 31px;
+  line-height: 41px;
   letter-spacing: -0.03em;
   text-align: center;
   color: #fff;
@@ -402,6 +405,11 @@ body.project-page .header_menu-search__icon_wrap {
   position: relative;
   background: linear-gradient(91.36deg, #E40592 0%, #EED151 100%);
   border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.main-btn__container:hover {
+  opacity: 0.8;
 }
 
 .main-btn {
