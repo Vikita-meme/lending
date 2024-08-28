@@ -53,6 +53,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 .header_lang-wrap {
   display: block;
   position: relative;
+  padding: 15px;
 }
 
 .header_lang-icon {
