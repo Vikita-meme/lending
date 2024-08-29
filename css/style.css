@@ -760,6 +760,13 @@ body.project-page .header_menu-search__icon_wrap {
 }
 /**/
 
+/* other */
+.simplebar-scrollbar {
+  background-color: #484848;
+  border-radius: 5px;
+}
+/**/
+
 /* common media */
 @media(max-width: 1440px) {
 }

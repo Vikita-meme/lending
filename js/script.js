@@ -11,4 +11,6 @@ $(document).ready(function() {
     }
   });
 
+  $('.simple-bar').each((index, element) => new SimpleBar(element));
+
 });
