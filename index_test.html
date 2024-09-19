@@ -21,293 +21,348 @@
     <link rel="stylesheet" type="text/css" href="css/simplebar.css">
 
     <!--Fonts-->
-    <link rel="stylesheet" type="text/css" href="fonts/gilroy/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
 
     <!--Styles-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
   </head>
   <body>
-    <!-- header -->
-    <header id="header">
-      <div class="header_menu">
+
+
+    <!-- hero -->
+    <section class="hero">
+
+      <!-- header -->
+      <header id="header" class="header">
         <div class="container">
-          <div class="header_menu-container">
-            <div class="row">
-              <div class="header_menu-col">
-                <div class="header_lang-wrap">
-                  <div class="header_lang-current">
-                    <img alt="EN" src="images/langs/en.svg" class="header_lang-icon" />
-                    <span class="header_lang-keycode">EN</span>
-                  </div>
-                  <div class="header_lang-items simple-bar">
-                    <a href="/" class="header_lang-item">
-                      <img alt="EN" src="images/langs/en.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">English</span>
-                    </a>
-                    <a href="/es" class="header_lang-item">
-                      <img alt="ES" src="images/langs/es.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Español</span>
-                    </a>
-                    <a href="/cn" class="header_lang-item">
-                      <img alt="CN" src="images/langs/cn.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">中国人</span>
-                    </a>
-                    <a href="/ru" class="header_lang-item">
-                      <img alt="RU" src="images/langs/ru.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Русский</span>
-                    </a>
-                    <a href="/fr" class="header_lang-item">
-                      <img alt="FR" src="images/langs/fr.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Français</span>
-                    </a>
-                    <a href="/ae" class="header_lang-item">
-                      <img alt="AE" src="images/langs/ae.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">عربي</span>
-                    </a>
-                    <a href="/in" class="header_lang-item">
-                      <img alt="IN" src="images/langs/in.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">हिंदी</span>
-                    </a>
-                    <a href="/ir" class="header_lang-item">
-                      <img alt="IR" src="images/langs/ir.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">فارسی</span>
-                    </a>
-                    <a href="/pt" class="header_lang-item">
-                      <img alt="PT" src="images/langs/pt.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Português</span>
-                    </a>
-                    <a href="/vn" class="header_lang-item">
-                      <img alt="VN" src="images/langs/vn.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Tiếng Việt</span>
-                    </a>
-                    <a href="/tr" class="header_lang-item">
-                      <img alt="TR" src="images/langs/tr.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Türkçe</span>
-                    </a>
-                    <a href="/kr" class="header_lang-item">
-                      <img alt="KR" src="images/langs/kr.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">한국어</span>
-                    </a>
-                    <a href="/jp" class="header_lang-item">
-                      <img alt="JP" src="images/langs/jp.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">日本語</span>
-                    </a>
-                    <a href="/de" class="header_lang-item">
-                      <img alt="DE" src="images/langs/de.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Deutsch</span>
-                    </a>
-                  </div>
+          <div class="header-container">
+            <div class="logo-container">
+              <img
+                src="images/logo.png"
+                srcset="images/logo@2x.png 2x, images/logo@3x.png 3x"
+                alt="Logo"
+                class="logo"
+              >
+            </div>
+            <nav class="nav-links">
+              <a href="#about" class="nav-link">About</a>
+              <a href="#features" class="nav-link">OUR FEATURES</a>
+              <a href="#mini-app" class="nav-link">MINI APP</a>
+              <a href="#tokenomics" class="nav-link">TOKENOMICS</a>
+              <a href="#roadmap" class="nav-link">Our plans</a>
+              <a href="#contact" class="nav-link">Contact us</a>
+            </nav>
+            <div class="header_lang-wrap">
+              <div class="header_lang-current">
+                <img alt="EN" src="images/langs/en.svg" class="header_lang-icon" />
+                <span class="header_lang-keycode">EN</span>
+                <div class="header_lang-arrow">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 10L12 14L8 10" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </div>
               </div>
-              <div class="header_menu-col">
-                <div class="header_menu-wrap d-none d-lg-block">
-                  <nav class="header_menu-navbar header_menu-navbar navbar navbar-expand-lg">
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                      <ul class="navbar-nav mr-auto top-menu">
-
-                        <li class="current-menu-item">
-                          <a href="#contacts" class="nav-link">Contacts</a>
-                        </li>
-                      </ul>
-
-                    </div>
-
-                  </nav>
-                </div>
-
-                <div class="header_top-btn d-block d-lg-none">
-                  <div class="header_top-btn__wrap">
-                    <div class="navbar-light" style="">
-                      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span> </span>
-                        <span> </span>
-                        <span> </span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
+              <div class="header_lang-items simple-bar">
+                <a href="/" class="header_lang-item">
+                  <img alt="EN" src="images/langs/en.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">English</span>
+                </a>
+                <a href="/es" class="header_lang-item">
+                  <img alt="ES" src="images/langs/es.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">Español</span>
+                </a>
+                <a href="/cn" class="header_lang-item">
+                  <img alt="CN" src="images/langs/cn.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">中国人</span>
+                </a>
+                <a href="/ru" class="header_lang-item">
+                  <img alt="RU" src="images/langs/ru.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">Русский</span>
+                </a>
+                <a href="/fr" class="header_lang-item">
+                  <img alt="FR" src="images/langs/fr.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">Français</span>
+                </a>
+                <a href="/ae" class="header_lang-item">
+                  <img alt="AE" src="images/langs/ae.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">عربي</span>
+                </a>
+                <a href="/in" class="header_lang-item">
+                  <img alt="IN" src="images/langs/in.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">हिंदी</span>
+                </a>
+                <a href="/ir" class="header_lang-item">
+                  <img alt="IR" src="images/langs/ir.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">فارسی</span>
+                </a>
+                <a href="/pt" class="header_lang-item">
+                  <img alt="PT" src="images/langs/pt.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">Português</span>
+                </a>
+                <a href="/vn" class="header_lang-item">
+                  <img alt="VN" src="images/langs/vn.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">Tiếng Việt</span>
+                </a>
+                <a href="/tr" class="header_lang-item">
+                  <img alt="TR" src="images/langs/tr.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">Türkçe</span>
+                </a>
+                <a href="/kr" class="header_lang-item">
+                  <img alt="KR" src="images/langs/kr.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">한국어</span>
+                </a>
+                <a href="/jp" class="header_lang-item">
+                  <img alt="JP" src="images/langs/jp.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">日本語</span>
+                </a>
+                <a href="/de" class="header_lang-item">
+                  <img alt="DE" src="images/langs/de.svg" class="header_lang-icon" />
+                  <span class="header_lang-name">Deutsch</span>
+                </a>
               </div>
-
             </div>
           </div>
-
         </div>
-      </div>
-      <div class="header_menu-wrap d-blok d-lg-none">
-        <nav class="header_menu-navbar header_menu-navbar navbar navbar-expand-lg">
+      </header>
+      <!-- header -->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <ul class="navbar-nav mr-auto top-menu">
-
-              <li class="current-menu-item">
-                <a href="#contacts" class="nav-link" data-toggle="collapse" data-target="#navbarSupportedContent">Contacts</a>
-              </li>
-            </ul>
-
-          </div>
-
-        </nav>
-      </div>
-    </header>
-    <!-- header -->
-
-      <!-- main title -->
-      <div class="main_title">
-        <div class="container">
-          <div class="main_title-logo__wrap">
-            <img src="images/logo.png" srcset="images/logo@2x.png 2x, /images/logo@3x.png 3x" class="img-fluid main_title-logo__img" alt="">
-          </div>
-
-          <div class="main_title-title__wrap">
-            <p class="main_title-title">Always count your money, I swear my friend. Someone will be lucky, others fail. Money loves silence, it's a gem, if the others laughing, do not hear them.</p>
-          </div>
-
-<!--          <div class="main_subtitle-title__wrap">-->
-<!--            <p class="main_subtitle-title"><span class="-yellow">Первая в мире мем-криптовалюта,</span></br>создающая тренды</br>и объединяющая сообщество.</p>-->
-<!--          </div>-->
-          <div class="main-btn__wrap">
-            <a href="https://sunpump.meme/token/TP7r1pDoS1snMjEJE1kE17GRt3Df4mYuZz" target="_blank" class="main-btn__container">
-              <div class="main-btn">
-                <span class="main-btn__title">buy tokens</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- main title -->
-
-      <!-- services block -->
-      <div class="services_block">
-        <div class="container">
-          <div class="services-vikita__wrap">
-            <img src="images/vikita.png" srcset="images/vikita@2x.png 2x, /images/vikita@3x.png 3x" class="img-fluid services-vikita" alt="">
-          </div>
-
-          <div class="services-title__wrap">
-            <p class="services-title">VIKITA is an AI character started as a meme lives in a blockchain-based metaverse to bring technology in our lives and make this world better</p>
-          </div>
-
-          <div class="services-subtitle__wrap">
-            <p class="services-subtitle">This will change everything!</p>
-          </div>
-
-          <div class="row">
-
-            <div class="services_block-col col-12">
-              <div class="services_block-wrap">
-
-                <div class="services_block-icon__wrap">
-                  <img src="images/vikita.png" class="img-fluid services_block-icon__img" alt="">
-                </div>
-
-                <div class="services_block-title__wrap">
-                  <p class="services_block-title">Strong</br>Community</p>
-                </div>
-<!--                <div class="services_block-text__wrap">-->
-<!--                  <p>We've already been supported by: Justin Sun, Paolo Ardoino, Changpeng Zhao, Ben Zhou, Jason Statham, Pavel Durov.</p>-->
-<!--                </div>-->
-
-              </div>
-            </div>
-
-            <div class="services_block-col col-12">
-              <div class="services_block-wrap -pink">
-
-                <div class="services_block-icon__wrap">
-                  <img src="images/vikita.png" class="img-fluid services_block-icon__img" alt="">
-                </div>
-
-                <div class="services_block-title__wrap">
-                  <p class="services_block-title">Innovative</br>technologies:</p>
-                </div>
-                <div class="services_block-text__wrap">
-                  <p>We've gathered all the technologies in our project: AI, ML, Blockchain, Metaverse, TNDP.</p>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="services_block-yellow"></div>
-      </div>
-      <!-- services block -->
-
-    <!-- stages block -->
-    <div class="stages_block">
       <div class="container">
-        <div class="stages-title__wrap">
-          <p class="stages-title">Our plan is as follows:</p>
-        </div>
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              The people<br>
+              on <span class="hero-title_black">vikita</span><br>
+              are in danger!
+            </h1>
+            <div class="hero-cta">
+              <p class="hero-subtitle">Help save their planet from<br />the evil Memcoins!</p>
+              <a href="#" class="cta-button">BUY TOKENS</a>
+            </div>
+          </div>
+        </section>
 
-        <div class="stages-img__wrap">
-          <img src="images/stages.png" srcset="images/stages@2x.png 2x, /images/stages@3x.png 3x" class="img-fluid stages-img" alt="">
-        </div>
+        <section id="about" class="about-section">
+          <div class="about-vikita">
+            <img
+              src="images/vikita_about.png"
+              alt=""
+            >
+          </div>
+          <div class="about-content">
+            <h2 class="about-title">
+              who is<br>
+              <span class="about-title_black">vikita</span>?
+            </h2>
+            <div class="about-text-wrapper">
+              <p class="about-description">
+                <strong>VIKITA</strong> is an <strong>AI</strong> character started as<br />
+                a meme lives in a blockchain-based<br />metaverse to bring technology in our<br />lives and make this world better.<br /><br />
+                This will change everything!
+              </p>
+              <a href="#" class="join-community-btn">JOIN COMMUNITY</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" class="features-section">
+          <div class="features-content">
+            <h2 class="features-title">our<br /><span class="features-title_black">features</span></h2>
+            <div class="features-cards">
+              <div class="feature-card">
+                <h3 class="feature-title">STRONG<br />COMMUNITY</h3>
+                <div class="social-icons">
+                  <div class="icon-wrapper">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.6429 16.9746L34.9291 3H32.018L21.3451 15.1314L12.8268 3H2.99979L15.8839 21.3465L2.99979 35.9998H5.91084L17.1748 23.1856L26.1725 35.9998H35.9996L22.6429 16.9746ZM18.6545 21.5076L17.347 19.6795L6.96064 5.1474H11.4326L19.8172 16.8796L21.1192 18.7077L32.0167 33.957H27.5447L18.6545 21.5076Z" fill="white"/>
+                    </svg>
+                  </div>
+                  <div class="icon-wrapper">
+                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.6443 18.5575L26.3917 8.54481C28.7358 7.50183 36.6856 4.16427 36.6856 4.16427C36.6856 4.16427 40.3547 2.70408 40.0489 6.25024C39.947 7.71042 39.1316 12.8211 38.3163 18.3489L35.7683 34.7238C35.7683 34.7238 35.5644 37.1227 33.8318 37.5399C32.0992 37.9571 29.2454 36.0797 28.7358 35.6625C28.3281 35.3496 21.0918 30.6562 18.4419 28.3616C17.7285 27.7358 16.9131 26.4842 18.5438 25.024C22.2129 21.5822 26.5955 17.3059 29.2454 14.5941C30.4685 13.3426 31.6915 10.4222 26.5955 13.9683L12.2248 23.8767C12.2248 23.8767 10.5941 24.9197 7.53646 23.981C4.47886 23.0423 0.911662 21.7908 0.911662 21.7908C0.911662 21.7908 -1.53442 20.2263 2.6443 18.5575Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-card">
+                <h3 class="feature-title">INNOVATIVE<br />TECHNOLOGIES</h3>
+                <div class="tech-tags">
+                  <span class="tech-tag">AI</span>
+                  <span class="tech-tag">ML</span>
+                  <span class="tech-tag">Blockchain</span>
+                  <span class="tech-tag">metaverse</span>
+                  <span class="tech-tag">tndp</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
+    </section>
+    <!-- hero -->
 
-    <!-- socials block -->
-    <div id="contacts" class="socials_block">
+    <!-- banner -->
+    <div class="banner"></div>
+    <!-- banner -->
+
+    <!-- mini-app -->
+    <section id="mini-app" class="mini-app-section">
       <div class="container">
-        <div class="socials-title__wrap">
-          <p class="socials-title">Join our</br>social media:</p>
+        <div class="mini-app-content">
+          <div class="mini-app-text">
+            <h2 class="mini-app-title">vikita<br /><span class="mini-app-title_black">mini app</span></h2>
+            <div class="mini-app-description-wrapper">
+              <p class="mini-app-description">Experience the thrill with the Vikita<br />Telegram mini-app! Join now, earn<br />points for every interaction, and<br />unlock exciting rewards along<br />the way!</p>
+              <a href="" class="play-game-btn">PLAY GAME</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="socials_container">
-        <a href="https://x.com/vikitameme" target="_blank" class="socials_item -yellow">
-          <div class="socials_icon__wrap">
-            <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials_icon">
-              <path d="M27.564 0H32.9306L21.2056 13.4021L35 31.6356H24.1996L15.7413 20.5756L6.06083 31.6356H0.69125L13.2329 17.3002L0 0.0014584H11.0746L18.7206 10.1106L27.564 0ZM25.6813 28.4244H28.6548L9.45875 3.04354H6.26792L25.6813 28.4244Z" fill="black"/>
-            </svg>
-          </div>
-          <div class="socials_item-title__wrap">
-            <span class="socials_item-title">X</span>
-<!--            <p class="socials-text">Последние новости и обновления.</p>-->
-          </div>
-        </a>
+    </section>
+    <!-- mini-app -->
 
-        <a href="https://t.me/VikitaMeme" target="_blank" class="socials_item">
-          <div class="socials_icon__wrap">
+    <!-- tokenomics -->
+    <section id="tokenomics" class="tokenomics-section">
+      <div class="container">
 
-            <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials_icon">
-              <path d="M32.9061 0.257517C32.9061 0.257517 36.1437 -1.005 35.8728 2.06087C35.7837 3.32338 34.9745 7.74259 34.3445 12.5218L32.1861 26.6803C32.1861 26.6803 32.0061 28.7545 30.3869 29.1153C28.7686 29.4753 26.3402 27.8528 25.8902 27.4919C25.5302 27.2211 19.1452 23.1627 16.8968 21.1794C16.2668 20.6377 15.5468 19.556 16.9868 18.2935L26.4302 9.2751C27.5094 8.19176 28.5886 5.66673 24.0919 8.73343L11.5001 17.3002C11.5001 17.3002 10.0609 18.2027 7.36339 17.391L1.51667 15.5868C1.51667 15.5868 -0.641687 14.2343 3.04585 12.8818C12.0401 8.64343 23.1027 4.31506 32.9053 0.256683" fill="black"/>
-            </svg>
+        <div class="tokenomics-content">
+          <div class="tokenomics-details">
+            <h2 class="tokenomics-title">tokenomics</h2>
+            <div class="tokenomics-cards">
+              <div class="tokenomics-card">
+                <h3 class="card-title">TOTAL SUPPLY</h3>
+                <p class="card-value">$1 Billion</p>
+              </div>
+              <div class="tokenomics-card">
+                <h3 class="card-title">TOKEN ADDRESS</h3>
+                <p class="card-value">TP7r1pDoS1snMjEJE1kE17GRt3Df4mYuZz</p>
+              </div>
+            </div>
+            <div class="tokenomics-cta">
+              <button class="buy-tokens-btn">BUY TOKENS</button>
+            </div>
+          </div>
+        </div>
 
+        <section id="roadmap" class="roadmap-section">
+          <div class="roadmap-content">
+            <div class="roadmap-title-wrapper">
+              <h2 class="roadmap-title">OUR <span class="roadmap-title_black">plan</span></h2>
+            </div>
+            <div class="roadmap-checks">
+              <div class="roadmap-check">
+                <div class="roadmap-check__img -checked">
+                  <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6416 0.355628C26.1195 0.829799 26.1195 1.59858 25.6416 2.07275L8.58383 19L0.358371 10.8375C-0.119457 10.3633 -0.119457 9.59454 0.358371 9.12037C0.836199 8.64619 1.61091 8.64619 2.08874 9.12037L8.58383 15.5657L23.9113 0.355628C24.3891 -0.118543 25.1638 -0.118543 25.6416 0.355628Z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="roadmap-check">
+                <div class="roadmap-check__img">
+                  <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6416 0.355628C26.1195 0.829799 26.1195 1.59858 25.6416 2.07275L8.58383 19L0.358371 10.8375C-0.119457 10.3633 -0.119457 9.59454 0.358371 9.12037C0.836199 8.64619 1.61091 8.64619 2.08874 9.12037L8.58383 15.5657L23.9113 0.355628C24.3891 -0.118543 25.1638 -0.118543 25.6416 0.355628Z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="roadmap-check">
+                <div class="roadmap-check__img">
+                  <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6416 0.355628C26.1195 0.829799 26.1195 1.59858 25.6416 2.07275L8.58383 19L0.358371 10.8375C-0.119457 10.3633 -0.119457 9.59454 0.358371 9.12037C0.836199 8.64619 1.61091 8.64619 2.08874 9.12037L8.58383 15.5657L23.9113 0.355628C24.3891 -0.118543 25.1638 -0.118543 25.6416 0.355628Z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="roadmap-check">
+                <div class="roadmap-check__img">
+                  <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6416 0.355628C26.1195 0.829799 26.1195 1.59858 25.6416 2.07275L8.58383 19L0.358371 10.8375C-0.119457 10.3633 -0.119457 9.59454 0.358371 9.12037C0.836199 8.64619 1.61091 8.64619 2.08874 9.12037L8.58383 15.5657L23.9113 0.355628C24.3891 -0.118543 25.1638 -0.118543 25.6416 0.355628Z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="roadmap-milestones">
+              <div class="milestone">
+                <div class="milestone-content">
+                  <h3 class="milestone-date">Q3 2024</h3>
+                  <p class="milestone-description"><strong>VIKITA</strong> was born,<br />learned to walk, grew<br />up, and went to the<br />exchange.</p>
+                </div>
+              </div>
+              <div class="milestone">
+                <div class="milestone-content">
+                  <h3 class="milestone-date">Q4 2024</h3>
+                  <p class="milestone-description"><strong>VIKITA</strong> became<br />famous worldwide,<br />everyone wants it,<br />and it launched its<br />own ТАЕ collection.</p>
+                </div>
+              </div>
+              <div class="milestone">
+                <div class="milestone-content">
+                  <h3 class="milestone-date">Q1 2025</h3>
+                  <p class="milestone-description"><strong>VIKITA</strong> is a superstar<br />with a market cap of<br />over $1 billion and<br />launched its own<br />metaverse.</p>
+                </div>
+              </div>
+              <div class="milestone">
+                <div class="milestone-content">
+                  <h3 class="milestone-date">Q2 2025</h3>
+                  <p class="milestone-description"><strong>VIKITA</strong> is basking a<br />glory, founded its<br />own country where<br />the rainbow always<br />shines.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="socials_icon__wrap">
-            <span class="socials_item-title">Telegram</span>
-<!--            <p class="socials-text">Обсуждения, поддержка и сообщество.</p>-->
-          </div>
-        </a>
+        </section>
+
       </div>
-    </div>
+    </section>
+    <!-- tokenomics -->
+
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="cta-text-column">
+          <h2 class="cta-title">come join<br>Vikita's World!</h2>
+        </div>
+        <div class="cta-button-column">
+          <div class="cta-button-wrapper">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b18b7a312584011415640c4347cdcc0df5f19c290d976379e08d6e5b34553bc?placeholderIfAbsent=true&apiKey=7d7f5044949646c8b202cfd29c74a876" alt="CTA decoration" class="cta-image">
+            <div class="cta-button-container">
+              <button class="cta-button">BUY TOKENS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-section">
+      <div class="social-card">
+        <div class="social-card-header">
+          <div class="social-icon-wrapper">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/17eacf376584dbd0ceddfc238503eadfee2f4ff796387c12be9bad4a3c3421c9?placeholderIfAbsent=true&apiKey=7d7f5044949646c8b202cfd29c74a876" alt="Twitter icon" class="social-icon">
+          </div>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/dc10bb9d40a3df861afbe51200334e8cab453359284979a6b772742fda429540?placeholderIfAbsent=true&apiKey=7d7f5044949646c8b202cfd29c74a876" alt="Twitter logo" class="social-icon">
+        </div>
+        <h3 class="social-card-title">TWITTER</h3>
+        <div class="social-card-stats">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/989b9ae3cf76abea67d6585bcb11dae13bb6d0664aaf4868fdd7bc665d110874?placeholderIfAbsent=true&apiKey=7d7f5044949646c8b202cfd29c74a876" alt="Followers icon" class="stats-icon">
+          <span class="stats-value">300+</span>
+        </div>
+      </div>
+      <div class="social-card">
+        <div class="social-card-header">
+          <div class="social-icon-wrapper">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/efbfb20c459dce49617eeff1146335ddde68504f5eaf5e1ec6b5ab87d704e20e?placeholderIfAbsent=true&apiKey=7d7f5044949646c8b202cfd29c74a876" alt="Telegram icon" class="social-icon">
+          </div>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/be3af2bc92c72173f0dfd74473fc39e2158a4286d0176e4e9457766773cb4464?placeholderIfAbsent=true&apiKey=7d7f5044949646c8b202cfd29c74a876" alt="Telegram logo" class="social-icon">
+        </div>
+        <h3 class="social-card-title">TELEGRAM</h3>
+        <div class="social-card-stats">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0b54d2ed2e081e56a8e6e5c9b839eba9b0d40912df956553850f5ea59719c976?placeholderIfAbsent=true&apiKey=7d7f5044949646c8b202cfd29c74a876" alt="Members icon" class="stats-icon">
+          <span class="stats-value">34K+</span>
+        </div>
+      </div>
+    </section>
 
 
     <!-- footer -->
-    <footer id="footer">
-      <div class="container">
-        <div class="footer_copyright__wrap">
-          <span class="footer_copyright">© 2024 vikita.xyz</span>
-        </div>
-
-        <div class="footer_socials__wrap">
-          <a href="https://x.com/vikitameme" target="_blank" class="footer_socials__item">
-            <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer_socials__icon">
-              <path d="M27.564 0H32.9306L21.2056 13.4021L35 31.6356H24.1996L15.7413 20.5756L6.06083 31.6356H0.69125L13.2329 17.3002L0 0.0014584H11.0746L18.7206 10.1106L27.564 0ZM25.6813 28.4244H28.6548L9.45875 3.04354H6.26792L25.6813 28.4244Z" fill="black"/>
-            </svg>
-          </a>
-
-          <a href="https://t.me/VikitaMeme" target="_blank" class="footer_socials__item">
-            <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer_socials__icon -tg">
-              <path d="M32.9061 0.257517C32.9061 0.257517 36.1437 -1.005 35.8728 2.06087C35.7837 3.32338 34.9745 7.74259 34.3445 12.5218L32.1861 26.6803C32.1861 26.6803 32.0061 28.7545 30.3869 29.1153C28.7686 29.4753 26.3402 27.8528 25.8902 27.4919C25.5302 27.2211 19.1452 23.1627 16.8968 21.1794C16.2668 20.6377 15.5468 19.556 16.9868 18.2935L26.4302 9.2751C27.5094 8.19176 28.5886 5.66673 24.0919 8.73343L11.5001 17.3002C11.5001 17.3002 10.0609 18.2027 7.36339 17.391L1.51667 15.5868C1.51667 15.5868 -0.641687 14.2343 3.04585 12.8818C12.0401 8.64343 23.1027 4.31506 32.9053 0.256683" fill="black"/>
-            </svg>
-          </a>
-        </div>
-      </div>
+    <footer id="footer" class="footer">
+      <p>&copy; 2024 vikita.xyz</p>
     </footer>
     <!-- footer -->
 
