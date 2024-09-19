@@ -166,6 +166,80 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 .header_lang-wrap:hover .header_lang-arrow {
   transform: rotate(180deg);
 }
+
+.header_toggler {
+  display: none;
+}
+
+.navbar-light {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.navbar-toggler {
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 7px 10px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: 0;
+  position: relative;
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: #FFFFFF;
+  height: 3px;
+  width: 20px;
+  margin-bottom: 3px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  position: relative;
+  right: 0;
+  opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  -webkit-transition: transform .35s ease-in-out;
+  -moz-transition: transform .35s ease-in-out;
+  -o-transition: transform .35s ease-in-out;
+  transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  opacity: 0.9;
+}
 /* end header */
 
 /* start hero */
@@ -226,6 +300,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   color: #ddd;
   font-weight: 400;
   line-height: 140%;
+  width: 295px;
 }
 .cta-button {
   outline: none;
@@ -250,6 +325,17 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   box-shadow: -3px -4px 7px 0px rgba(255, 255, 255, 0.15) inset, 4px 38px 62px 0 rgba(0, 0, 0, 0.20);
 }
 
+.hero-cta_hidden {
+  display: none;
+}
+
+.hero-cta_hidden img {
+  width: 100%;
+  height: auto;
+}
+/* end hero */
+
+/* start about */
 .about-section {
   position: relative;
   border-radius: 52px;
@@ -261,9 +347,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   background-image: url("../images/about_bg.png");
   background-size: cover;
 }
-/* end hero */
 
-/* start about */
 .about-vikita {
   flex: 1;
   position: relative;
@@ -315,6 +399,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+  width: 401px;
 }
 .join-community-btn {
   display: inline-block;
@@ -801,7 +886,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 }
 
 .cta-button-container {
-  margin-top: 20px;
+  margin-top: 38px;
 }
 /* end cta */
 
@@ -824,12 +909,17 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 
 .social-card {
   border-radius: 47px;
-  background-color: rgba(43, 43, 43, 0.8);
+  background: rgba(43, 43, 43, 0.8);
   display: flex;
   flex-direction: column;
   flex: 1;
   padding: 36px;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.social-card:hover {
+  background: rgba(43, 43, 43, 1);
 }
 
 .social-card-header {
@@ -901,276 +991,164 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 }
 
 @media (max-width: 991px) {
-  .hero-section {
-    max-width: 100%;
-    padding: 0 20px;
-  }
 
   .header {
-    max-width: 100%;
-    padding: 0 20px;
+    margin-top: 0;
+  }
+
+  .logo-container {
+    width: 61px;
   }
 
   .nav-links {
-    max-width: 100%;
+    display: none;
   }
 
-  .language-toggle {
-    white-space: initial;
+  .header-container {
+    background: none;
+    padding: 24px 0;
+  }
+
+  .header_toggler {
+    display: block;
+  }
+
+  .header_lang-wrap {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .hero {
+    background-image: none;
   }
 
   .hero-content {
-    max-width: 100%;
-    margin-top: 40px;
+    margin-top: 66px;
   }
 
   .hero-title {
-    max-width: 100%;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 52px;
+    text-align: center;
   }
 
   .hero-cta {
-    max-width: 100%;
-    margin-top: 40px;
+    text-align: center;
+    margin-top: 23px;
+    gap: 0;
+  }
+
+  .hero-subtitle {
+    width: 100%;
+    font-size: 14px;
   }
 
   .cta-button {
-    padding: 0 20px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 19px 44px;
   }
 
-  .floating-circle {
-    margin: 40px 0 0 10px;
+  .hero-cta_hidden {
+    display: block;
   }
 
   .about-section {
-    max-width: 100%;
-    margin-bottom: 10px;
-    padding: 0 20px;
+    margin-top: 0;
+    border-radius: 20px;
+    padding: 26px 18px;
   }
 
   .about-title {
-    max-width: 100%;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 58px;
+    text-align: center;
   }
 
   .about-text-wrapper {
-    margin-top: 40px;
+    margin-top: 25px;
+  }
+
+  .about-description {
+    text-align: center;
+    font-size: 14px;
+    line-height: 140%;
+    width: 100%;
   }
 
   .join-community-btn {
-    margin-top: 40px;
-    padding: 0 20px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 19px 44px;
+    text-align: center;
   }
 
   .features-section {
-    max-width: 100%;
-    padding: 100px 0;
-  }
-
-  .features-content {
-    max-width: 100%;
-    margin-bottom: 10px;
-    padding: 100px 20px;
-  }
-
-  .features-title {
-    max-width: 100%;
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  .features-cards {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-
-  .feature-card {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-
-  .social-icons {
-    margin-top: 40px;
-  }
-
-  .icon-wrapper {
-    padding: 0 20px;
-  }
-
-  .mini-app-section {
-    max-width: 100%;
-  }
-
-  .banner {
-    max-width: 100%;
-    white-space: initial;
-  }
-
-  .banner-content {
-    white-space: initial;
-  }
-
-  .mini-app-content {
-    max-width: 100%;
-    padding: 100px 20px;
-  }
-
-  .mini-app-text {
-    margin-bottom: 10px;
-  }
-
-  .mini-app-title {
-    max-width: 100%;
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  .mini-app-description-wrapper {
-    margin-top: 40px;
-  }
-
-  .play-game-btn {
-    margin-top: 40px;
-    padding: 0 20px;
-  }
-
-  .tokenomics-section {
-    padding-left: 20px;
-    margin-top: 40px;
-  }
-
-  .tokenomics-content {
-    max-width: 100%;
+    margin-top: 100px;
     padding-bottom: 100px;
   }
 
-  .tokenomics-image {
-    max-width: 100%;
+  .features-title {
+    font-size: 54px;
   }
 
-  .tokenomics-details {
-    max-width: 100%;
-    margin: -200px 0 10px;
-    padding: 100px 20px;
+  .features-cards {
+    flex-direction: column;
   }
 
-  .tokenomics-title {
-    max-width: 100%;
-    font-size: 40px;
-  }
-
-  .tokenomics-cards {
-    margin-top: 40px;
-  }
-
-  .tokenomics-card {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-
-  .card-value {
-    margin-top: 40px;
-  }
-
-  .tokenomics-cta {
-    margin-top: 40px;
-  }
-
-  .buy-tokens-btn {
-    padding: 0 20px;
-  }
-
-  .roadmap-section {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-
-  .roadmap-content {
-    max-width: 100%;
-    margin-right: 5px;
-    padding: 0 20px;
+  .mini-app-title {
+    font-size: 46px;
   }
 
   .roadmap-title-wrapper {
-    margin-right: 10px;
-    font-size: 40px;
+    text-align: center;
+    margin-right: 0;
   }
 
-  .roadmap-title {
-    max-width: 100%;
-    font-size: 40px;
-  }
-
-  .roadmap-line {
-    margin: 40px 0 0 10px;
+  .roadmap-checks {
+    display: none;
   }
 
   .roadmap-milestones {
-    max-width: 100%;
+    flex-direction: column;
+    margin-left: 0;
   }
 
-  .cta-section {
-    max-width: 100%;
-    margin-top: 40px;
+  .tokenomics-title {
+    font-size: 46px;
+  }
+
+  .tokenomics-card {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .card-value {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  .roadmap-title {
+    font-size: 54px;
+  }
+
+  .cta-title {
+    font-size: 54px;
   }
 
   .cta-container {
     flex-direction: column;
-    align-items: stretch;
-    gap: 0px;
-  }
-
-  .cta-text-column {
-    width: 100%;
-  }
-
-  .cta-title {
-    max-width: 100%;
-    margin-top: 40px;
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  .cta-button-column {
-    width: 100%;
-  }
-
-  .cta-button-wrapper {
-    margin-top: 40px;
-  }
-
-  .cta-image {
-    margin-right: 5px;
-  }
-
-  .cta-button {
-    padding: 0 20px;
   }
 
   .social-section {
-    margin: 40px 5px 0 0;
+    background-image: none;
+  }
+
+  .social-cards {
+    flex-direction: column;
   }
 
   .social-card {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-
-  .social-card-header {
-    max-width: 100%;
-  }
-
-  .social-card-title {
-    margin-top: 40px;
-  }
-
-  .social-card-stats {
-    white-space: initial;
-  }
-
-  .footer {
-    margin: 40px 5px 0 0;
+    width: 100%;
   }
 }
