@@ -744,62 +744,57 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   font-weight: 400;
   line-height: 140%;
 }
+/* start roadmap */
+
+/* start cta */
 .cta-section {
   position: relative;
-  margin-top: 240px;
+  margin-top: 207px;
 }
 
 .cta-container {
   gap: 20px;
   display: flex;
+  justify-content: space-between;
 }
 
 .cta-text-column {
   display: flex;
   flex-direction: column;
-  line-height: normal;
-  width: 79%;
-  margin-left: 0px;
 }
 
 .cta-title {
-  color: #fff;
   text-transform: uppercase;
-  position: relative;
-  font: 400 140px/126px Ranchers, sans-serif;
-  border: 2px solid #fff;
+  color: #FFFFFF;
+  font-family: Bowlby One, sans-serif;
+  font-size: 123px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+}
+
+.cta-title_black {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFFFFF;
 }
 
 .cta-button-column {
   display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: 21%;
-  margin-left: 20px;
 }
 
 .cta-button-wrapper {
   position: relative;
-  display: flex;
-  margin-top: 185px;
-  flex-direction: column;
-  color: #161616;
-  font: 800 20px Manrope, sans-serif;
+  margin-top: auto;
 }
 
 .cta-image {
-  aspect-ratio: 2.51;
-  object-fit: contain;
-  object-position: center;
-  width: 223px;
+  width: 200px;
+  height: auto;
 }
 
 .cta-button-container {
-  display: flex;
-  margin-top: 30px;
-  flex-direction: column;
-  align-items: end;
-  justify-content: start;
+  margin-top: 20px;
 }
 
 .social-section {
