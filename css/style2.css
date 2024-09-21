@@ -295,14 +295,17 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 }
 
 .hero-subtitle {
+  display: block;
+  margin-bottom: 17px;
   border-radius: 0;
   font-size: 21px;
   color: #ddd;
   font-weight: 400;
   line-height: 140%;
-  width: 295px;
+  width: 259px;
 }
 .cta-button {
+  display: inline-block;
   outline: none;
   cursor: pointer;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
@@ -325,6 +328,42 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   box-shadow: -3px -4px 7px 0px rgba(255, 255, 255, 0.15) inset, 4px 38px 62px 0 rgba(0, 0, 0, 0.20);
 }
 
+.hero-cta__right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+
+.hero-cta__right_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-cta__right_content img {
+  width: 92px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.hero-cta__coming_soon {
+  display: block;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: left;
+  color: #9B9B9B;
+  max-width: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-cta__coming_soon.-small {
+  font-size: 14px;
+  margin-left: 7px;
+}
+
 .hero-cta_hidden {
   display: none;
 }
@@ -342,8 +381,8 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   background-color: #5490c7;
   display: flex;
   justify-content: space-between;
-  padding: 67px 90px;
-  margin-top: 148px;
+  padding: 67px 68px;
+  margin-top: 120px;
   background-image: url("../images/about_bg.png");
   background-size: cover;
 }
@@ -356,9 +395,9 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 .about-vikita img {
   display: block;
   position: absolute;
-  margin-top: -9%;
-  margin-left: -12%;
-  width: 112%;
+  margin-top: -6%;
+  margin-left: -11%;
+  width: 108%;
   height: auto;
 }
 
@@ -398,8 +437,8 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   font-size: 21px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%;
-  width: 401px;
+  line-height: 140%;
+  width: 469px;
 }
 .join-community-btn {
   display: inline-block;
@@ -432,7 +471,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   position: relative;
   justify-content: center;
   margin-top: 219px;
-  padding-bottom: 225px;
+  padding-bottom: 214px;
 }
 
 .features-content {
@@ -487,25 +526,28 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 }
 .social-icons {
   display: flex;
-  margin-top: 144px;
+  margin-top: 57px;
   align-items: center;
   gap: 8px;
   justify-content: start;
+  border-bottom: 1px solid rgba(106, 106, 106, 0.3);
+  padding-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .icon-wrapper {
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(106, 106, 106, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 69px;
-  height: 69px;
+  width: 38px;
+  height: 38px;
 }
 
 .icon-wrapper svg {
-  width: 40px;
+  width: 18px;
   height: auto;
 }
 
@@ -520,7 +562,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 
 .tech-tag {
   border-radius: 60px;
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(106, 106, 106, 0.3);
   padding: 7px 21px;
   color: #FFF;
   font-size: 21px;
@@ -528,6 +570,11 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   font-weight: 400;
   line-height: 120%;
   text-transform: uppercase;
+}
+
+.tech-tag img {
+  height: 23px;
+  width: auto;
 }
 /* end features */
 
@@ -730,7 +777,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 
 .roadmap-title-wrapper {
   text-align: right;
-  margin-right: 52px;
+  margin-right: 28px;
 }
 
 .roadmap-title {
@@ -878,6 +925,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 .cta-button-wrapper {
   position: relative;
   margin-top: auto;
+  margin-bottom: 10px;
 }
 
 .cta-image {
@@ -886,7 +934,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 }
 
 .cta-button-container {
-  margin-top: 38px;
+  margin-top: 17px;
 }
 /* end cta */
 
@@ -896,7 +944,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: top;
-  padding-bottom: 29px;
+  padding-bottom: 55px;
 }
 
 .social-cards {
@@ -904,7 +952,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 51px;
+  margin-top: 42px;
 }
 
 .social-card {
@@ -928,32 +976,32 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 }
 
 .social-icon-wrapper {
-  border-radius: 41px;
-  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  background-color: rgba(106, 106, 106, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 68px;
-  height: 68px;
-  padding: 0 16px;
+  width: 38px;
+  height: 38px;
 }
 .social-icon-wrapper svg {
-  width: 34px;
+  width: 18px;
   height: auto;
 }
 .social-link-wrapper {
-  margin-right: -4px;
+  margin-top: -2px;
+  margin-right: -6px;
   cursor: pointer;
 }
 
 .social-link-wrapper svg {
-  width: 51px;
+  width: 41px;
   height: auto;
 }
 
 .social-card-title {
   color: #fff;
-  margin-top: 56px;
+  margin-top: 77px;
   font-size: 35px;
   font-style: normal;
   font-weight: 600;
@@ -965,7 +1013,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   align-items: center;
   justify-content: flex-start;
   gap: 5px;
-  margin-top: 6px;
+  margin-top: 12px;
 }
 
 .stats-icon {
