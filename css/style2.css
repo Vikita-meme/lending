@@ -74,9 +74,16 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 
 .nav-link {
   align-self: stretch;
-  margin: auto 0;
-  padding: .5rem 0.7rem;
+  padding: 0;
+  margin: .5rem 0.7rem;
+  padding-bottom: 5px;
 }
+
+.nav-link:hover {
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
 .header_lang-wrap {
   display: block;
   position: relative;
@@ -551,6 +558,10 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   height: auto;
 }
 
+.icon-wrapper:hover {
+  background: rgba(146, 146, 146, 0.3);
+}
+
 .tech-tags {
   margin-top: auto;
   display: flex;
@@ -570,6 +581,10 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   font-weight: 400;
   line-height: 120%;
   text-transform: uppercase;
+}
+
+a.tech-tag:hover {
+  background: rgba(146, 146, 146, 0.3);
 }
 
 .tech-tag img {
