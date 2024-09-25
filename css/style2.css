@@ -57,6 +57,10 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   width: 84px;
 }
 
+.logo-container.-mobile {
+  display: none;
+}
+
 .nav-links {
   align-self: stretch;
   display: flex;
@@ -91,7 +95,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 
 .header_lang-icon {
   width: 1.375rem;
-  height: 1.375rem;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -200,9 +204,9 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 .navbar-toggler span {
   display: block;
   background-color: #FFFFFF;
-  height: 3px;
+  height: 2px;
   width: 20px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -293,7 +297,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 .hero-cta {
   align-self: start;
   display: flex;
-  margin-top: 41px;
+  margin-top: 45px;
   align-items: start;
   gap: 23px;
   font-family: Manrope, sans-serif;
@@ -309,7 +313,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   color: #ddd;
   font-weight: 400;
   line-height: 140%;
-  width: 283px;
+  width: 264px;
 }
 .cta-button {
   display: inline-block;
@@ -355,13 +359,22 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 }
 
 .hero-cta__coming_soon_img {
-  width: 57px;
-  margin-left: -23px;
+  width: 100px;
+  margin-left: 7px;
+  transition: opacity 0.3s ease;
+}
+
+.hero-cta__coming_soon_img:first-child {
+  margin-left: 0;
 }
 
 .hero-cta__coming_soon_img svg {
   width: 100%;
   height: auto;
+}
+
+.hero-cta__coming_soon_img:hover {
+  opacity: 0.8;
 }
 
 .hero-cta__coming_soon {
@@ -616,7 +629,7 @@ a.tech-tag:hover {
 
 /* start mini-app */
 .mini-app-section {
-  background-color: #f8f9fa;
+  background-color: #EDEEF1;
   background-image: url("../images/mini-app_bg.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -632,6 +645,9 @@ a.tech-tag:hover {
 }
 
 .mini-app-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   position: relative;
   margin-top: 158px;
 }
@@ -645,6 +661,10 @@ a.tech-tag:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
+}
+
+.mini-app-image {
+  display: none;
 }
 
 .mini-app-title_black {
@@ -665,6 +685,7 @@ a.tech-tag:hover {
   font-weight: 400;
   line-height: 140%;
   text-align: right;
+  width: 334px;
 }
 
 .play-game-btn {
@@ -704,7 +725,7 @@ a.tech-tag:hover {
 }
 
 .tokenomics-details {
-  margin-top: 208px;
+  padding-top: 208px;
 }
 
 .tokenomics-title {
@@ -1054,6 +1075,10 @@ a.tech-tag:hover {
   text-transform: uppercase;
 }
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   margin-top: 68px;
   color: #FFF;
@@ -1061,6 +1086,11 @@ a.tech-tag:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+}
+
+.footer-image {
+  height: 50px;
+  width: auto;
 }
 
 @media (max-width: 991px) {
@@ -1071,6 +1101,11 @@ a.tech-tag:hover {
 
   .logo-container {
     width: 61px;
+    display: none;
+  }
+
+  .logo-container.-mobile {
+    display: block;
   }
 
   .nav-links {
@@ -1087,8 +1122,377 @@ a.tech-tag:hover {
   }
 
   .header_lang-wrap {
-    margin-left: auto;
-    margin-right: 20px;
+  }
+
+  .header_lang-items {
+    left: 0;
+  }
+
+  .header_lang-icon {
+    width: 1rem;
+  }
+
+  .hero {
+    background-image: url(../images/hero_bg_md.png);
+  }
+
+  .hero-content {
+    margin-top: 115px;
+  }
+
+  .hero-title {
+    font-size: 80px;
+  }
+
+  .hero-cta {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 54px;
+    gap: 0;
+  }
+
+  .hero-cta__coming_soon_img {
+    width: 80px;
+  }
+
+  .hero-cta__left {
+    margin-top: 38px;
+  }
+
+  .hero-subtitle {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 23px;
+    text-align: left;
+  }
+
+  .cta-button {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 22px 52px;
+  }
+
+  .about-section {
+    margin-top: 120px;
+    border-radius: 58px;
+    padding: 82px 18px;
+  }
+
+  .about-title {
+    font-size: 79px;
+    text-align: center;
+  }
+
+  .about-text-wrapper {
+    margin-top: 53px;
+    text-align: center;
+  }
+
+  .about-description {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 140%;
+    width: 100%;
+    padding: 0 116px;
+  }
+
+  .join-community-btn {
+    margin-top: 7px;
+    font-size: 20px;
+    padding: 21px 50px;
+    text-align: center;
+  }
+
+  .features-section {
+    margin-top: 120px;
+    padding-bottom: 132px;
+  }
+
+  .features-title {
+    font-size: 80px;
+  }
+
+  .features-cards {
+    margin-top: 50px;
+  }
+
+  .feature-card {
+    border-radius: 34px;
+    padding: 25px 24px;
+  }
+
+  .feature-title {
+    font-size: 20px;
+  }
+
+  .social-icons {
+    margin-top: 45px;
+    padding-bottom: 15px;
+    margin-bottom: 17px;
+  }
+
+  .tech-tag {
+    font-size: 13px;
+  }
+
+  .tech-tag img {
+    height: 17px;
+  }
+
+  .banner {
+    height: 64px;
+  }
+
+  .mini-app-section {
+    background: #EDEEF1;
+    background-image: none;
+    padding-bottom: 53px;
+  }
+
+  .mini-app-content {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 56px;
+  }
+
+  .mini-app-text {
+    text-align: center;
+    margin-top: 121px;
+    align-items: center;
+  }
+
+  .mini-app-title {
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .mini-app-description {
+    text-align: center;
+    font-size: 14px;
+    width: 377px;
+  }
+
+  .mini-app-description-wrapper {
+    text-align: center;
+  }
+
+  .play-game-btn {
+    margin-top: 11px;
+    font-size: 14px;
+    padding: 20px 101px;
+  }
+
+  .mini-app-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .mini-app-image_bg {
+    padding: 0 50px;
+  }
+
+  .tokenomics-details {
+    padding-top: 120px;
+  }
+
+  .tokenomics-cards {
+    flex-direction: row;
+    margin-top: 59px;
+  }
+
+  .tokenomics-title {
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .tokenomics-card {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 34px;
+    padding: 25px 24px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .tokenomics-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+  }
+
+  .buy-tokens-btn {
+    font-size: 14px;
+    padding: 19px 96px;
+  }
+
+  .card-value {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  .roadmap-section {
+    margin-top: 300px;
+    border-radius: 28px;
+  }
+
+  .roadmap-content {
+    padding: 81px 39px 85px;
+    background-image: url(../images/roadmap_bg_md.png);
+  }
+
+  .roadmap-title-wrapper {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .roadmap-checks {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  .roadmap-milestones {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+
+  .milestone-description {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .milestone-date {
+    font-size: 20px;
+  }
+
+  .roadmap-title {
+    font-size: 78px;
+  }
+
+  .roadmap-check__img {
+    width: 33px;
+    height: 33px;
+  }
+
+  .roadmap-check svg {
+    width: 13px;
+  }
+
+  .roadmap-check::after {
+    top: 15px;
+    width: calc(100% - 33px);
+  }
+
+  .cta-section {
+    margin-top: 120px;
+    padding-bottom: 52px;
+  }
+
+  .cta-title {
+    font-size: 80px;
+  }
+
+  .cta-button-column {
+    display: none;
+  }
+
+  .social-section {
+    background-image: url(../images/footer_bg_md.png);
+    background-size: auto 100%;
+  }
+
+  .social-cards {
+    margin-top: 0;
+  }
+
+  .social-card {
+    width: 100%;
+    border-radius: 33px;
+    padding: 25px;
+  }
+
+  .social-card-title {
+    margin-top: 25px;
+    font-size: 20px;
+  }
+
+  .stats-icon {
+    width: 20px;
+  }
+
+  .stats-value {
+    font-size: 14px;
+  }
+
+  .social-card-stats {
+    margin-top: 0;
+    gap: 7px;
+  }
+
+  .social-link-wrapper {
+    margin-top: 5px;
+    margin-right: 6px;
+  }
+
+  .social-link-wrapper svg {
+    width: 28px;
+  }
+
+  .tokenomics-cta_footer {
+    margin-top: 39px;
+  }
+
+  .footer {
+    font-size: 12px;
+    margin-top: 78px;
+  }
+
+  .footer-image {
+    height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .header {
+    margin-top: 0;
+  }
+
+  .logo-container {
+    width: 61px;
+    display: none;
+  }
+
+  .logo-container.-mobile {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .header-container {
+    background: none;
+    padding: 24px 0;
+  }
+
+  .header_toggler {
+    display: block;
+  }
+
+  .header_lang-wrap {
+  }
+
+  .header_lang-items {
+    left: 0;
+  }
+
+  .header_lang-icon {
+    width: 1rem;
   }
 
   .hero {
