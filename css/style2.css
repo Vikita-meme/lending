@@ -1097,6 +1097,7 @@ a.tech-tag:hover {
 
   .header {
     margin-top: 0;
+    border-bottom: 1px solid #272727
   }
 
   .logo-container {
@@ -1114,7 +1115,7 @@ a.tech-tag:hover {
 
   .header-container {
     background: none;
-    padding: 24px 0;
+    padding: 24px 0 19px;
   }
 
   .header_toggler {
@@ -1457,11 +1458,6 @@ a.tech-tag:hover {
 }
 
 @media (max-width: 767px) {
-
-  .header {
-    margin-top: 0;
-  }
-
   .logo-container {
     width: 61px;
     display: none;
@@ -1476,8 +1472,7 @@ a.tech-tag:hover {
   }
 
   .header-container {
-    background: none;
-    padding: 24px 0;
+    padding: 24px 0 11px;
   }
 
   .header_toggler {
@@ -1500,7 +1495,7 @@ a.tech-tag:hover {
   }
 
   .hero-content {
-    margin-top: 66px;
+    margin-top: 80px;
   }
 
   .hero-title {
@@ -1509,14 +1504,34 @@ a.tech-tag:hover {
   }
 
   .hero-cta {
+    align-self: initial;
     text-align: center;
-    margin-top: 23px;
+    margin-top: 33px;
     gap: 0;
+    z-index: 2;
+  }
+
+  .hero-cta__right {
+    justify-content: center;
+  }
+
+  .hero-cta__left {
+    width: 100%;
+    margin-top: 23px;
+  }
+
+  .hero-cta__coming_soon_imgs {
+    margin-right: 12px;
+  }
+
+  .hero-cta__coming_soon_img {
+    width: 64px;
+    margin-left: 6px;
   }
 
   .hero-subtitle {
-    width: 100%;
-    font-size: 14px;
+    text-align: center;
+    margin-bottom: 16px;
   }
 
   .cta-button {
@@ -1528,21 +1543,23 @@ a.tech-tag:hover {
 
   .hero-cta_hidden {
     display: block;
+    margin-top: -57px;
+    z-index: 1;
   }
 
   .about-section {
-    margin-top: 0;
-    border-radius: 20px;
-    padding: 26px 18px;
+    margin-top: -54px;
+    border-radius: 30px;
+    padding: 33px 18px;
+    background-image: url(../images/about_bg_sm.png);
   }
 
   .about-title {
-    font-size: 58px;
-    text-align: center;
+    font-size: 44px;
   }
 
   .about-text-wrapper {
-    margin-top: 25px;
+    margin-top: 34px;
   }
 
   .about-description {
@@ -1550,49 +1567,84 @@ a.tech-tag:hover {
     font-size: 14px;
     line-height: 140%;
     width: 100%;
+    padding: 0 15px;
   }
 
   .join-community-btn {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    margin-top: 0;
     font-size: 14px;
-    padding: 19px 44px;
+    padding: 19px 78px;
     text-align: center;
   }
 
   .features-section {
-    margin-top: 100px;
-    padding-bottom: 100px;
+    margin-top: 80px;
+    padding-bottom: 81px;
   }
 
   .features-title {
-    font-size: 54px;
+    font-size: 44px;
   }
 
   .features-cards {
+    margin-top: 31px;
     flex-direction: column;
+  }
+
+  .tech-tags {
+    row-gap: 5px;
+  }
+
+  .tech-tag {
+    padding: 11px 21px;
+  }
+
+  .banner {
+    height: 59px;
+  }
+
+  .mini-app-section {
+    padding-bottom: 27px;
+  }
+
+  .mini-app-text {
+    margin-top: 80px;
   }
 
   .mini-app-title {
-    font-size: 46px;
+    font-size: 44px;
   }
 
-  .roadmap-title-wrapper {
-    text-align: center;
-    margin-right: 0;
+  .mini-app-description-wrapper {
+    margin-top: 33px;
   }
 
-  .roadmap-checks {
-    display: none;
+  .play-game-btn {
+    margin-top: 0;
+    padding: 19px 122px;
   }
 
-  .roadmap-milestones {
+  .mini-app-content {
+    padding-bottom: 74px;
+  }
+
+  .mini-app-image_bg {
+    padding: 0 29px;
+  }
+
+  .tokenomics-details {
+    padding-top: 80px;
+  }
+
+  .tokenomics-cards {
     flex-direction: column;
-    margin-left: 0;
+    margin-top: 40px;
+    gap: 15px;
   }
 
   .tokenomics-title {
-    font-size: 46px;
+    font-size: 44px;
   }
 
   .tokenomics-card {
@@ -1600,17 +1652,78 @@ a.tech-tag:hover {
     overflow: hidden;
   }
 
+  .card-title {
+    margin-bottom: 51px;
+  }
+
   .card-value {
-    overflow: hidden;
-    overflow-x: scroll;
+    font-size: 14px;
+  }
+
+  .tokenomics-cta {
+    margin-top: 38px;
+  }
+
+  .buy-tokens-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .roadmap-section {
+    margin-top: 261px;
+  }
+
+  .roadmap-content {
+    padding: 32px 33px 10px;
+  }
+
+  .roadmap-checks_wrap {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .roadmap-checks {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .roadmap-milestones {
+    flex-grow: 1;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 15px;
+  }
+
+  .milestone-content {
+    margin-top: 6px;
+    height: 115px;
+  }
+
+  .milestone {
+    width: 100%;
+  }
+
+  .roadmap-check::after {
+    top: 33px;
+    left: 15px;
+    height: calc(100% - 33px);
+    width: 1px;
+    border-bottom: 0;
+    border-left: 1px dashed #000000;
   }
 
   .roadmap-title {
-    font-size: 54px;
+    font-size: 43px;
+  }
+
+  .cta-section {
+    margin-top: 79px;
+    padding-bottom: 33px;
   }
 
   .cta-title {
-    font-size: 54px;
+    font-size: 44px;
   }
 
   .cta-container {
@@ -1623,9 +1736,18 @@ a.tech-tag:hover {
 
   .social-cards {
     flex-direction: column;
+    gap: 15px;
   }
 
   .social-card {
     width: 100%;
+  }
+
+  .tokenomics-cta_footer {
+    margin-top: 18px;
+  }
+
+  .footer {
+    margin-top: 58px;
   }
 }
