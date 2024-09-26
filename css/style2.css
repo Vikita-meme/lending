@@ -1134,6 +1134,7 @@ a.tech-tag:hover {
 }
 
 .social-card-stats {
+  /*display: flex;*/
   display: none;
   align-items: center;
   justify-content: flex-start;
