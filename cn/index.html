@@ -1,321 +1,602 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--metatextblock-->
-    <title>VIKITA</title>
-    <!--/metatextblock-->
+  <!--metatextblock-->
+  <title>VIKITA</title>
+  <!--/metatextblock-->
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
-    <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32">
 
 
-    <!--Bootstrap and Other Vendors-->
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/simplebar.css">
+  <!--Bootstrap and Other Vendors-->
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/simplebar.css">
 
-    <!--Fonts-->
-    <link rel="stylesheet" type="text/css" href="/fonts/gilroy/style.css">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
 
-    <!--Styles-->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-  </head>
-  <body>
-    <!-- header -->
-    <header id="header">
-      <div class="header_menu">
-        <div class="container">
-          <div class="header_menu-container">
-            <div class="row">
-              <div class="header_menu-col">
-                <div class="header_lang-wrap">
-                  <div class="header_lang-current">
-                    <img alt="CN" src="/images/langs/cn.svg" class="header_lang-icon" />
-                    <span class="header_lang-keycode">中国人</span>
-                  </div>
-                  <div class="header_lang-items">
-                    <a href="/" class="header_lang-item">
-                      <img alt="EN" src="/images/langs/en.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">English</span>
-                    </a>
-                    <a href="/es" class="header_lang-item">
-                      <img alt="ES" src="/images/langs/es.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Español</span>
-                    </a>
-                    <a href="/cn" class="header_lang-item">
-                      <img alt="CN" src="/images/langs/cn.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">中国人</span>
-                    </a>
-                    <a href="/ru" class="header_lang-item">
-                      <img alt="RU" src="/images/langs/ru.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Русский</span>
-                    </a>
-                    <a href="/fr" class="header_lang-item">
-                      <img alt="FR" src="/images/langs/fr.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Français</span>
-                    </a>
-                    <a href="/ae" class="header_lang-item">
-                      <img alt="AE" src="/images/langs/ae.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">عربي</span>
-                    </a>
-                    <a href="/in" class="header_lang-item">
-                      <img alt="IN" src="/images/langs/in.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">हिंदी</span>
-                    </a>
-                    <a href="/ir" class="header_lang-item">
-                      <img alt="IR" src="/images/langs/ir.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">فارسی</span>
-                    </a>
-                    <a href="/pt" class="header_lang-item">
-                      <img alt="PT" src="/images/langs/pt.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Português</span>
-                    </a>
-                    <a href="/vn" class="header_lang-item">
-                      <img alt="VN" src="/images/langs/vn.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Tiếng Việt</span>
-                    </a>
-                    <a href="/tr" class="header_lang-item">
-                      <img alt="TR" src="/images/langs/tr.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Türkçe</span>
-                    </a>
-                    <a href="/kr" class="header_lang-item">
-                      <img alt="KR" src="/images/langs/kr.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">한국어</span>
-                    </a>
-                    <a href="/jp" class="header_lang-item">
-                      <img alt="JP" src="/images/langs/jp.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">日本語</span>
-                    </a>
-                    <a href="/de" class="header_lang-item">
-                      <img alt="DE" src="/images/langs/de.svg" class="header_lang-icon" />
-                      <span class="header_lang-name">Deutsch</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="header_menu-col">
-                <div class="header_menu-wrap d-none d-lg-block">
-                  <nav class="header_menu-navbar header_menu-navbar navbar navbar-expand-lg">
+  <!--Styles-->
+  <link rel="stylesheet" type="text/css" href="/css/style2.css">
+</head>
+<body>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                      <ul class="navbar-nav mr-auto top-menu">
+<!-- hero -->
+<section class="hero">
 
-                        <li class="current-menu-item">
-                          <a href="#contacts" class="nav-link">联系方式</a>
-                        </li>
-                      </ul>
-
-                    </div>
-
-                  </nav>
-                </div>
-
-                <div class="header_top-btn d-block d-lg-none">
-                  <div class="header_top-btn__wrap">
-                    <div class="navbar-light" style="">
-                      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span> </span>
-                        <span> </span>
-                        <span> </span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
+  <!-- header -->
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header-container">
+        <a href="/cn" class="logo-container">
+          <img
+            src="/images/logo.png"
+            srcset="/images/logo@2x.png 2x, /images/logo@3x.png 3x"
+            alt="Logo"
+            class="logo"
+          />
+        </a>
+        <nav class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#features" class="nav-link">OUR FEATURES</a>
+          <a href="#mini-app" class="nav-link">MINI APP</a>
+          <a href="#tokenomics" class="nav-link">TOKENOMICS</a>
+          <a href="#roadmap" class="nav-link">Our plans</a>
+          <a href="#contact" class="nav-link">Contact us</a>
+        </nav>
+        <div class="header_lang-wrap">
+          <div class="header_lang-current">
+            <img alt="CN" src="/images/langs/cn.svg" class="header_lang-icon" />
+            <span class="header_lang-name">中国人</span>
+            <div class="header_lang-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 10L12 14L8 10" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
           </div>
-
-        </div>
-      </div>
-      <div class="header_menu-wrap d-blok d-lg-none">
-        <nav class="header_menu-navbar header_menu-navbar navbar navbar-expand-lg">
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <ul class="navbar-nav mr-auto top-menu">
-
-              <li class="current-menu-item">
-                <a href="#contacts" class="nav-link" data-toggle="collapse" data-target="#navbarSupportedContent">联系方式</a>
-              </li>
-            </ul>
-
-          </div>
-
-        </nav>
-      </div>
-    </header>
-    <!-- header -->
-
-      <!-- main title -->
-      <div class="main_title">
-        <div class="container">
-          <div class="main_title-logo__wrap">
-            <img src="/images/logo.png" srcset="/images/logo@2x.png 2x, /images/logo@3x.png 3x" class="img-fluid main_title-logo__img" alt="">
-          </div>
-
-          <div class="main_title-title__wrap">
-            <p class="main_title-title">VIKITA 的人民处于危险之中！帮助拯救他们的星球，使其免受邪恶的 Memcoins 的侵害！</p>
-          </div>
-
-<!--          <div class="main_subtitle-title__wrap">-->
-<!--            <p class="main_subtitle-title"><span class="-yellow">Первая в мире мем-криптовалюта,</span></br>создающая тренды</br>и объединяющая сообщество.</p>-->
-<!--          </div>-->
-          <div class="main-btn__wrap">
-            <a href="https://sunpump.meme/token/TP7r1pDoS1snMjEJE1kE17GRt3Df4mYuZz" target="_blank" class="main-btn__container">
-              <div class="main-btn">
-                <span class="main-btn__title">购买代币</span>
-              </div>
+          <div class="header_lang-items simple-bar">
+            <a href="/" class="header_lang-item">
+              <img alt="EN" src="/images/langs/en.svg" class="header_lang-icon" />
+              <span class="header_lang-name">English</span>
+            </a>
+            <a href="/es" class="header_lang-item">
+              <img alt="ES" src="/images/langs/es.svg" class="header_lang-icon" />
+              <span class="header_lang-name">Español</span>
+            </a>
+            <a href="/cn" class="header_lang-item">
+              <img alt="CN" src="/images/langs/cn.svg" class="header_lang-icon" />
+              <span class="header_lang-name">中国人</span>
+            </a>
+            <a href="/ru" class="header_lang-item">
+              <img alt="RU" src="/images/langs/ru.svg" class="header_lang-icon" />
+              <span class="header_lang-name">Русский</span>
+            </a>
+            <a href="/fr" class="header_lang-item">
+              <img alt="FR" src="/images/langs/fr.svg" class="header_lang-icon" />
+              <span class="header_lang-name">Français</span>
+            </a>
+            <a href="/ae" class="header_lang-item">
+              <img alt="AE" src="/images/langs/ae.svg" class="header_lang-icon" />
+              <span class="header_lang-name">عربي</span>
+            </a>
+            <a href="/in" class="header_lang-item">
+              <img alt="IN" src="/images/langs/in.svg" class="header_lang-icon" />
+              <span class="header_lang-name">हिंदी</span>
+            </a>
+            <a href="/ir" class="header_lang-item">
+              <img alt="IR" src="/images/langs/ir.svg" class="header_lang-icon" />
+              <span class="header_lang-name">فارسی</span>
+            </a>
+            <a href="/pt" class="header_lang-item">
+              <img alt="PT" src="/images/langs/pt.svg" class="header_lang-icon" />
+              <span class="header_lang-name">Português</span>
+            </a>
+            <a href="/vn" class="header_lang-item">
+              <img alt="VN" src="/images/langs/vn.svg" class="header_lang-icon" />
+              <span class="header_lang-name">Tiếng Việt</span>
+            </a>
+            <a href="/tr" class="header_lang-item">
+              <img alt="TR" src="/images/langs/tr.svg" class="header_lang-icon" />
+              <span class="header_lang-name">Türkçe</span>
+            </a>
+            <a href="/kr" class="header_lang-item">
+              <img alt="KR" src="/images/langs/kr.svg" class="header_lang-icon" />
+              <span class="header_lang-name">한국어</span>
+            </a>
+            <a href="/jp" class="header_lang-item">
+              <img alt="JP" src="/images/langs/jp.svg" class="header_lang-icon" />
+              <span class="header_lang-name">日本語</span>
+            </a>
+            <a href="/de" class="header_lang-item">
+              <img alt="DE" src="/images/langs/de.svg" class="header_lang-icon" />
+              <span class="header_lang-name">Deutsch</span>
             </a>
           </div>
         </div>
-      </div>
-      <!-- main title -->
 
-      <!-- services block -->
-      <div class="services_block">
-        <div class="container">
-          <div class="services-vikita__wrap">
-            <img src="/images/vikita.png" srcset="/images/vikita@2x.png 2x, /images/vikita@3x.png 3x" class="img-fluid services-vikita" alt="">
-          </div>
+        <a href="/cn" class="logo-container -mobile">
+          <img
+            src="/images/logo.png"
+            srcset="/images/logo@2x.png 2x, /images/logo@3x.png 3x"
+            alt="Logo"
+            class="logo"
+          />
+        </a>
 
-          <div class="services-title__wrap">
-            <p class="services-title">VIKITA 是一个人工智能角色，最初是一个模因，生活在基于区块链的元宇宙中，旨在将技术带入我们的生活，让这个世界变得更美好</p>
-          </div>
-
-          <div class="services-subtitle__wrap">
-            <p class="services-subtitle">这将改变一切！</p>
-          </div>
-
-          <div class="row">
-
-            <div class="services_block-col col-12">
-              <div class="services_block-wrap">
-
-                <div class="services_block-icon__wrap">
-                  <img src="/images/vikita.png" class="img-fluid services_block-icon__img" alt="">
-                </div>
-
-                <div class="services_block-title__wrap">
-                  <p class="services_block-title">强大的社区</p>
-                </div>
-<!--                <div class="services_block-text__wrap">-->
-<!--                  <p>We've already been supported by: Justin Sun, Paolo Ardoino, Changpeng Zhao, Ben Zhou, Jason Statham, Pavel Durov.</p>-->
-<!--                </div>-->
-
-              </div>
-            </div>
-
-            <div class="services_block-col col-12">
-              <div class="services_block-wrap -pink">
-
-                <div class="services_block-icon__wrap">
-                  <img src="/images/vikita.png" class="img-fluid services_block-icon__img" alt="">
-                </div>
-
-                <div class="services_block-title__wrap">
-                  <p class="services_block-title">创新技术：</p>
-                </div>
-                <div class="services_block-text__wrap">
-                  <p>我们的项目囊括了所有技术：AI、ML、区块链、Metaverse、TNDP。我们不知道最后一个是什么。</p>
-                </div>
-
-              </div>
-            </div>
-
+        <div class="header_toggler">
+          <div class="navbar-light" style="">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span> </span>
+              <span> </span>
+              <span> </span>
+            </button>
           </div>
         </div>
-        <div class="services_block-yellow"></div>
-      </div>
-      <!-- services block -->
 
-    <!-- stages block -->
-    <div class="stages_block">
-      <div class="container">
-        <div class="stages-title__wrap">
-          <p class="stages-title">我们的计划如下：</p>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+
+  <!-- mobile menu -->
+
+  <div class="mobile_menu collapse navbar-collapse" id="navbarSupportedContent">
+
+    <div class="navbar-nav mr-auto top-menu">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#features" class="nav-link">OUR FEATURES</a>
+      <a href="#mini-app" class="nav-link">MINI APP</a>
+      <a href="#tokenomics" class="nav-link">TOKENOMICS</a>
+      <a href="#roadmap" class="nav-link">Our plans</a>
+      <a href="#contact" class="nav-link">Contact us</a>
+    </div>
+
+    <div class="mobile_menu_social-icons">
+      <a href="https://x.com/vikitameme" target="_blank" class="icon-wrapper">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.6429 16.9746L34.9291 3H32.018L21.3451 15.1314L12.8268 3H2.99979L15.8839 21.3465L2.99979 35.9998H5.91084L17.1748 23.1856L26.1725 35.9998H35.9996L22.6429 16.9746ZM18.6545 21.5076L17.347 19.6795L6.96064 5.1474H11.4326L19.8172 16.8796L21.1192 18.7077L32.0167 33.957H27.5447L18.6545 21.5076Z" fill="white"/>
+        </svg>
+      </a>
+      <a href="https://t.me/VikitaMeme" target="_blank" class="icon-wrapper">
+        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.6443 18.5575L26.3917 8.54481C28.7358 7.50183 36.6856 4.16427 36.6856 4.16427C36.6856 4.16427 40.3547 2.70408 40.0489 6.25024C39.947 7.71042 39.1316 12.8211 38.3163 18.3489L35.7683 34.7238C35.7683 34.7238 35.5644 37.1227 33.8318 37.5399C32.0992 37.9571 29.2454 36.0797 28.7358 35.6625C28.3281 35.3496 21.0918 30.6562 18.4419 28.3616C17.7285 27.7358 16.9131 26.4842 18.5438 25.024C22.2129 21.5822 26.5955 17.3059 29.2454 14.5941C30.4685 13.3426 31.6915 10.4222 26.5955 13.9683L12.2248 23.8767C12.2248 23.8767 10.5941 24.9197 7.53646 23.981C4.47886 23.0423 0.911662 21.7908 0.911662 21.7908C0.911662 21.7908 -1.53442 20.2263 2.6443 18.5575Z" fill="white"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- mobile menu -->
+
+  <div class="container">
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Be a part<br>
+          in <span class="hero-title_black">Vikita</span><br>
+          takeover of Tamagochis
+        </h1>
+        <div class="hero-cta">
+          <div class="hero-cta__left">
+            <p class="hero-subtitle">Help save their planet!</p>
+            <a href="https://sunpump.meme/token/TP7r1pDoS1snMjEJE1kE17GRt3Df4mYuZz" target="_blank" class="cta-button">BUY TOKENS</a>
+          </div>
+          <div class="hero-cta__right">
+            <div class="hero-cta__right_content">
+              <div class="hero-cta__coming_soon_imgs">
+                <a
+                  href="https://sunpump.meme/token/TP7r1pDoS1snMjEJE1kE17GRt3Df4mYuZz"
+                  target="_blank"
+                  class="hero-cta__coming_soon_img"
+                >
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle cx="32" cy="32" r="32" fill="#2B2B2B"/>
+                    <mask id="mask0_471_6113" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="6" y="6" width="52" height="52">
+                      <circle cx="31.9999" cy="31.9999" r="25.6636" fill="#D9D9D9" stroke="black" stroke-width="0.127127"/>
+                    </mask>
+                    <g mask="url(#mask0_471_6113)">
+                      <rect x="6.3999" y="6.3999" width="51.2" height="51.2" fill="url(#pattern0_471_6113)"/>
+                    </g>
+                    <defs>
+                      <pattern id="pattern0_471_6113" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_471_6113" transform="scale(0.0025)"/>
+                      </pattern>
+                      <image id="image0_471_6113" width="400" height="400" xlink:href="data:image/jpeg;base64,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"/>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="https://poloniex.com/trade/VIKITA_USDT"
+                  target="_blank"
+                  class="hero-cta__coming_soon_img"
+                >
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="32" fill="#2B2B2B"/>
+                    <g clip-path="url(#clip0_471_6118)">
+                      <path d="M14.4634 19.8401H21.7787L30.2793 32.3012L26.1827 33.212L22.7759 32.3012L14.4634 19.8401Z" fill="url(#paint0_linear_471_6118)"/>
+                      <path d="M14.0801 44.7609H21.3954L30.2792 32.301H22.7759L14.0801 44.7609Z" fill="url(#paint1_linear_471_6118)"/>
+                      <path d="M25.2031 19.8401H32.5196L41.019 32.3012L36.9994 33.2629L33.5074 32.3012L25.2031 19.8401Z" fill="url(#paint2_linear_471_6118)"/>
+                      <path d="M42.0248 19.8401H49.3413L42.6801 29.8903L38.9243 24.3885L42.0248 19.8401Z" fill="url(#paint3_linear_471_6118)"/>
+                      <path d="M35.8232 19.8401H38.6422L37.2546 21.9351L35.8232 19.8401Z" fill="url(#paint4_linear_471_6118)"/>
+                      <path d="M42.4507 44.7611H49.7671L42.7062 34.5925L38.9243 39.8471L42.4507 44.7611Z" fill="url(#paint5_linear_471_6118)"/>
+                      <path d="M35.3892 44.7609H39.0598L37.2464 42.1809L35.3892 44.7609Z" fill="url(#paint6_linear_471_6118)"/>
+                      <path d="M24.8198 44.7609H32.0594L41.019 32.301H33.5073L24.8198 44.7609Z" fill="url(#paint7_linear_471_6118)"/>
+                    </g>
+                    <defs>
+                      <linearGradient id="paint0_linear_471_6118" x1="16.7407" y1="18.1446" x2="23.9341" y2="31.6835" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#73A2A8"/>
+                        <stop offset="1" stop-color="#71B5BF"/>
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_471_6118" x1="16.4176" y1="43.2282" x2="23.5174" y2="30.1387" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#699699"/>
+                        <stop offset="1" stop-color="#73A4A6"/>
+                      </linearGradient>
+                      <linearGradient id="paint2_linear_471_6118" x1="27.4354" y1="18.6436" x2="34.1411" y2="31.2167" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#005661"/>
+                        <stop offset="1" stop-color="#048293"/>
+                      </linearGradient>
+                      <linearGradient id="paint3_linear_471_6118" x1="41.311" y1="28.2827" x2="41.311" y2="18.5117" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#676F74"/>
+                        <stop offset="1" stop-color="#3B444A"/>
+                      </linearGradient>
+                      <linearGradient id="paint4_linear_471_6118" x1="34.6031" y1="18.5117" x2="34.6031" y2="20.5487" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#93989C"/>
+                        <stop offset="1" stop-color="#AAAFB2"/>
+                      </linearGradient>
+                      <linearGradient id="paint5_linear_471_6118" x1="42.3549" y1="41.6231" x2="38.3376" y2="35.5202" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3B444A"/>
+                        <stop offset="1" stop-color="#3B444A"/>
+                      </linearGradient>
+                      <linearGradient id="paint6_linear_471_6118" x1="34.5949" y1="42.7405" x2="34.5949" y2="40.2314" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#858B8F"/>
+                        <stop offset="1" stop-color="#868D90"/>
+                      </linearGradient>
+                      <linearGradient id="paint7_linear_471_6118" x1="27.0434" y1="42.9113" x2="33.7734" y2="30.4585" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#08575C"/>
+                        <stop offset="1" stop-color="#096166"/>
+                      </linearGradient>
+                      <clipPath id="clip0_471_6118">
+                        <rect width="35.7247" height="24.96" fill="white" transform="translate(14.0801 19.8401)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <p class="hero-cta__coming_soon">+</p>
+              <p class="hero-cta__coming_soon -small">more coming soon</p>
+            </div>
+          </div>
         </div>
 
-        <div class="stages-img__wrap">
-          <img src="/images/stages.png" srcset="/images/stages@2x.png 2x, /images/stages@3x.png 3x" class="img-fluid stages-img" alt="">
+        <div class="hero-cta_hidden">
+          <img
+            src="/images/hero_vikita.png"
+            alt="Vikita"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-vikita">
+        <img
+          src="/images/vikita_about.png"
+          alt=""
+        >
+      </div>
+      <div class="about-content">
+        <h2 class="about-title">
+          who is<br>
+          <span class="about-title_black">vikita</span> ?
+        </h2>
+        <div class="about-text-wrapper">
+          <p class="about-description">
+            The <strong>VIKITA</strong> people are friendly beings living in
+            harmony with nature. They have a unique ability to adopt the appearance, knowledge, and skills of other creatures, allowing them to better understand the world and use this knowledge for the benefit of the entire universe.
+          </p>
+          <a href="https://t.me/VikitaMeme" target="_blank" class="join-community-btn">JOIN COMMUNITY</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <div class="features-content">
+        <h2 class="features-title">our<br /><span class="features-title_black">features</span></h2>
+        <div class="features-cards">
+          <div class="feature-card">
+            <h3 class="feature-title">STRONG<br />COMMUNITY</h3>
+            <div class="social-icons">
+              <a href="https://x.com/vikitameme" target="_blank" class="icon-wrapper">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.6429 16.9746L34.9291 3H32.018L21.3451 15.1314L12.8268 3H2.99979L15.8839 21.3465L2.99979 35.9998H5.91084L17.1748 23.1856L26.1725 35.9998H35.9996L22.6429 16.9746ZM18.6545 21.5076L17.347 19.6795L6.96064 5.1474H11.4326L19.8172 16.8796L21.1192 18.7077L32.0167 33.957H27.5447L18.6545 21.5076Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="https://t.me/VikitaMeme" target="_blank" class="icon-wrapper">
+                <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.6443 18.5575L26.3917 8.54481C28.7358 7.50183 36.6856 4.16427 36.6856 4.16427C36.6856 4.16427 40.3547 2.70408 40.0489 6.25024C39.947 7.71042 39.1316 12.8211 38.3163 18.3489L35.7683 34.7238C35.7683 34.7238 35.5644 37.1227 33.8318 37.5399C32.0992 37.9571 29.2454 36.0797 28.7358 35.6625C28.3281 35.3496 21.0918 30.6562 18.4419 28.3616C17.7285 27.7358 16.9131 26.4842 18.5438 25.024C22.2129 21.5822 26.5955 17.3059 29.2454 14.5941C30.4685 13.3426 31.6915 10.4222 26.5955 13.9683L12.2248 23.8767C12.2248 23.8767 10.5941 24.9197 7.53646 23.981C4.47886 23.0423 0.911662 21.7908 0.911662 21.7908C0.911662 21.7908 -1.53442 20.2263 2.6443 18.5575Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+            <div class="tech-tags">
+              <a href="https://coinmarketcap.com/dexscan/tron/TX5MLkgh4GgjbN2vVFRVetywdKv4ssEs3R/" target="_blank" class="tech-tag">
+                <img
+                  src="/images/cmc.png"
+                  alt="Vikita"
+                />
+              </a>
+              <a href="https://dexscreener.com/tron/tx5mlkgh4ggjbn2vvfrvetywdkv4sses3r" target="_blank" class="tech-tag">
+                <img
+                  src="/images/ds.png"
+                  alt="Vikita"
+                />
+              </a>
+              <a href="https://www.coingecko.com/en/coins/vikita" target="_blank" class="tech-tag">
+                <img
+                  src="/images/cg.png"
+                  alt="Vikita"
+                />
+              </a>
+              <a href="https://sunpump.meme/token/TP7r1pDoS1snMjEJE1kE17GRt3Df4mYuZz" target="_blank" class="tech-tag">
+                <img
+                  src="/images/sun.png"
+                  alt="Vikita"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="feature-card">
+            <h3 class="feature-title">INNOVATIVE<br />TECHNOLOGIES</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">AI</span>
+              <span class="tech-tag">Blockchain</span>
+              <span class="tech-tag">metaverse</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<!-- hero -->
+
+<!-- banner -->
+<div class="banner"></div>
+<!-- banner -->
+
+<!-- mini-app -->
+<section id="mini-app" class="mini-app-section">
+  <div class="mini-app-image_bg_lg">
+    <img
+      src="/images/phone_bg.png"
+      alt="Vikita"
+      class="mini-app-image_lg"
+    >
+  </div>
+  <div class="container">
+    <div class="mini-app-content">
+      <div class="mini-app-text">
+        <h2 class="mini-app-title">vikita<br /><span class="mini-app-title_black">mini app</span></h2>
+        <div class="mini-app-description-wrapper">
+          <p class="mini-app-description">Experience the thrill with the Vikita Telegram mini-app! Join now, earn points for every interaction, and unlock exciting rewards along the way!</p>
+          <a href="https://t.me/vikitameme_bot" target="_blank" class="play-game-btn">PLAY GAME</a>
         </div>
       </div>
     </div>
 
-    <!-- socials block -->
-    <div id="contacts" class="socials_block">
-      <div class="container">
-        <div class="socials-title__wrap">
-          <p class="socials-title">加入我们的社交媒体：</p>
+    <div class="mini-app-image_bg">
+      <img
+        src="/images/phone_bg.png"
+        alt="Vikita"
+        class="mini-app-image"
+      >
+    </div>
+  </div>
+</section>
+<!-- mini-app -->
+
+<!-- tokenomics -->
+<section id="tokenomics" class="tokenomics-section">
+  <div class="container">
+
+    <div class="tokenomics-content">
+      <div class="tokenomics-details">
+        <h2 class="tokenomics-title">tokenomics</h2>
+        <div class="tokenomics-cards">
+          <div class="tokenomics-card">
+            <h3 class="card-title">TOTAL SUPPLY</h3>
+            <p class="card-value">$1 Billion</p>
+          </div>
+          <div class="tokenomics-card">
+            <h3 class="card-title">TOKEN ADDRESS</h3>
+            <p class="card-value">TP7r1pDoS1snMjEJE1kE17GRt3Df4mYuZz</p>
+          </div>
         </div>
-      </div>
-      <div class="socials_container">
-        <a href="https://x.com/vikitameme" target="_blank" class="socials_item -yellow">
-          <div class="socials_icon__wrap">
-            <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials_icon">
-              <path d="M27.564 0H32.9306L21.2056 13.4021L35 31.6356H24.1996L15.7413 20.5756L6.06083 31.6356H0.69125L13.2329 17.3002L0 0.0014584H11.0746L18.7206 10.1106L27.564 0ZM25.6813 28.4244H28.6548L9.45875 3.04354H6.26792L25.6813 28.4244Z" fill="black"/>
-            </svg>
-          </div>
-          <div class="socials_item-title__wrap">
-            <span class="socials_item-title">X</span>
-            <!--            <p class="socials-text">Последние новости и обновления.</p>-->
-          </div>
-        </a>
-
-        <a href="https://t.me/VikitaMeme" target="_blank" class="socials_item">
-          <div class="socials_icon__wrap">
-
-            <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials_icon">
-              <path d="M32.9061 0.257517C32.9061 0.257517 36.1437 -1.005 35.8728 2.06087C35.7837 3.32338 34.9745 7.74259 34.3445 12.5218L32.1861 26.6803C32.1861 26.6803 32.0061 28.7545 30.3869 29.1153C28.7686 29.4753 26.3402 27.8528 25.8902 27.4919C25.5302 27.2211 19.1452 23.1627 16.8968 21.1794C16.2668 20.6377 15.5468 19.556 16.9868 18.2935L26.4302 9.2751C27.5094 8.19176 28.5886 5.66673 24.0919 8.73343L11.5001 17.3002C11.5001 17.3002 10.0609 18.2027 7.36339 17.391L1.51667 15.5868C1.51667 15.5868 -0.641687 14.2343 3.04585 12.8818C12.0401 8.64343 23.1027 4.31506 32.9053 0.256683" fill="black"/>
-            </svg>
-
-          </div>
-          <div class="socials_icon__wrap">
-            <span class="socials_item-title">Telegram</span>
-<!--            <p class="socials-text">Обсуждения, поддержка и сообщество.</p>-->
-          </div>
-        </a>
+        <div class="tokenomics-cta">
+          <a href="https://sunpump.meme/token/TP7r1pDoS1snMjEJE1kE17GRt3Df4mYuZz" target="_blank" class="buy-tokens-btn">BUY TOKENS</a>
+        </div>
       </div>
     </div>
 
-
-    <!-- footer -->
-    <footer id="footer">
-      <div class="container">
-        <div class="footer_copyright__wrap">
-          <span class="footer_copyright">© 2024 vikita.xyz</span>
+    <section id="roadmap" class="roadmap-section">
+      <div class="roadmap-content">
+        <div class="roadmap-title-wrapper">
+          <h2 class="roadmap-title">OUR <span class="roadmap-title_black">plan</span></h2>
         </div>
-
-        <div class="footer_socials__wrap">
-          <a href="https://x.com/vikitameme" target="_blank" class="footer_socials__item">
-            <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer_socials__icon">
-              <path d="M27.564 0H32.9306L21.2056 13.4021L35 31.6356H24.1996L15.7413 20.5756L6.06083 31.6356H0.69125L13.2329 17.3002L0 0.0014584H11.0746L18.7206 10.1106L27.564 0ZM25.6813 28.4244H28.6548L9.45875 3.04354H6.26792L25.6813 28.4244Z" fill="black"/>
-            </svg>
-          </a>
-
-          <a href="https://t.me/VikitaMeme" target="_blank" class="footer_socials__item">
-            <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer_socials__icon -tg">
-              <path d="M32.9061 0.257517C32.9061 0.257517 36.1437 -1.005 35.8728 2.06087C35.7837 3.32338 34.9745 7.74259 34.3445 12.5218L32.1861 26.6803C32.1861 26.6803 32.0061 28.7545 30.3869 29.1153C28.7686 29.4753 26.3402 27.8528 25.8902 27.4919C25.5302 27.2211 19.1452 23.1627 16.8968 21.1794C16.2668 20.6377 15.5468 19.556 16.9868 18.2935L26.4302 9.2751C27.5094 8.19176 28.5886 5.66673 24.0919 8.73343L11.5001 17.3002C11.5001 17.3002 10.0609 18.2027 7.36339 17.391L1.51667 15.5868C1.51667 15.5868 -0.641687 14.2343 3.04585 12.8818C12.0401 8.64343 23.1027 4.31506 32.9053 0.256683" fill="black"/>
-            </svg>
-          </a>
+        <div class="roadmap-checks_wrap">
+          <div class="roadmap-checks">
+            <div class="roadmap-check">
+              <div class="roadmap-check__img -checked">
+                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6416 0.355628C26.1195 0.829799 26.1195 1.59858 25.6416 2.07275L8.58383 19L0.358371 10.8375C-0.119457 10.3633 -0.119457 9.59454 0.358371 9.12037C0.836199 8.64619 1.61091 8.64619 2.08874 9.12037L8.58383 15.5657L23.9113 0.355628C24.3891 -0.118543 25.1638 -0.118543 25.6416 0.355628Z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="roadmap-check">
+              <div class="roadmap-check__img">
+                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6416 0.355628C26.1195 0.829799 26.1195 1.59858 25.6416 2.07275L8.58383 19L0.358371 10.8375C-0.119457 10.3633 -0.119457 9.59454 0.358371 9.12037C0.836199 8.64619 1.61091 8.64619 2.08874 9.12037L8.58383 15.5657L23.9113 0.355628C24.3891 -0.118543 25.1638 -0.118543 25.6416 0.355628Z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="roadmap-check">
+              <div class="roadmap-check__img">
+                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6416 0.355628C26.1195 0.829799 26.1195 1.59858 25.6416 2.07275L8.58383 19L0.358371 10.8375C-0.119457 10.3633 -0.119457 9.59454 0.358371 9.12037C0.836199 8.64619 1.61091 8.64619 2.08874 9.12037L8.58383 15.5657L23.9113 0.355628C24.3891 -0.118543 25.1638 -0.118543 25.6416 0.355628Z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="roadmap-check">
+              <div class="roadmap-check__img">
+                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6416 0.355628C26.1195 0.829799 26.1195 1.59858 25.6416 2.07275L8.58383 19L0.358371 10.8375C-0.119457 10.3633 -0.119457 9.59454 0.358371 9.12037C0.836199 8.64619 1.61091 8.64619 2.08874 9.12037L8.58383 15.5657L23.9113 0.355628C24.3891 -0.118543 25.1638 -0.118543 25.6416 0.355628Z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="roadmap-milestones">
+            <div class="milestone">
+              <div class="milestone-content">
+                <h3 class="milestone-date">Q3 2024</h3>
+                <p class="milestone-description"><strong>VIKITA</strong> was born, learned to walk, grew up, and went to the exchange.</p>
+              </div>
+            </div>
+            <div class="milestone">
+              <div class="milestone-content">
+                <h3 class="milestone-date">Q4 2024</h3>
+                <p class="milestone-description"><strong>VIKITA</strong> became famous worldwide, everyone wants it, and it launched its own ТАЕ collection.</p>
+              </div>
+            </div>
+            <div class="milestone">
+              <div class="milestone-content">
+                <h3 class="milestone-date">Q1 2025</h3>
+                <p class="milestone-description"><strong>VIKITA</strong> is a superstar with a market cap of over $1 billion and launched its own metaverse.</p>
+              </div>
+            </div>
+            <div class="milestone">
+              <div class="milestone-content">
+                <h3 class="milestone-date">Q2 2025</h3>
+                <p class="milestone-description"><strong>VIKITA</strong> is basking a glory, founded its own country where the rainbow always shines.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="cta-text-column">
+          <h2 class="cta-title">come join<br /><span class="cta-title_black">Vikita's<br />World</span> !</h2>
+        </div>
+        <div class="cta-button-column">
+          <div class="cta-button-wrapper">
+            <img
+              src="/images/logo.png"
+              srcset="/images/logo@2x.png 2x, /images/logo@3x.png 3x"
+              alt="Logo"
+              class="cta-image"
+            >
+            <div class="cta-button-container">
+              <a href="https://sunpump.meme/token/TP7r1pDoS1snMjEJE1kE17GRt3Df4mYuZz" target="_blank" class="cta-button">BUY TOKENS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</section>
+<!-- tokenomics -->
+
+<!-- social -->
+<section id="contact" class="social-section">
+  <div class="container">
+
+    <div class="social-cards">
+      <a href="https://x.com/vikitameme" target="_blank" class="social-card">
+        <div class="social-card-header">
+          <div class="social-icon-wrapper">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.6429 16.9746L34.9291 3H32.018L21.3451 15.1314L12.8268 3H2.99979L15.8839 21.3465L2.99979 35.9998H5.91084L17.1748 23.1856L26.1725 35.9998H35.9996L22.6429 16.9746ZM18.6545 21.5076L17.347 19.6795L6.96064 5.1474H11.4326L19.8172 16.8796L21.1192 18.7077L32.0167 33.957H27.5447L18.6545 21.5076Z" fill="white"></path>
+            </svg>
+          </div>
+          <div class="social-link-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <path d="M47.5 32.4998V12.4998H27.5" stroke="white" stroke-width="1.875" stroke-linecap="round"/>
+              <path d="M47.5 12.5002L12.5 47.5002" stroke="white" stroke-width="1.875" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <h3 class="social-card-title">TWITTER</h3>
+        <div class="social-card-stats">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" class="stats-icon">
+            <path d="M5.33331 26.6666C5.33331 22.6666 10.6666 22.6666 13.3333 19.9999C14.6666 18.6666 10.6666 18.6666 10.6666 11.9999C10.6666 7.55592 12.444 5.33325 16 5.33325C19.556 5.33325 21.3333 7.55592 21.3333 11.9999C21.3333 18.6666 17.3333 18.6666 18.6666 19.9999C21.3333 22.6666 26.6666 22.6666 26.6666 26.6666" stroke="white" stroke-linecap="round"/>
+          </svg>
+          <!--          <span class="stats-value">300+</span>-->
+        </div>
+      </a>
+      <a href="https://t.me/VikitaMeme" target="_blank" class="social-card">
+        <div class="social-card-header">
+          <div class="social-icon-wrapper">
+            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.6443 18.5575L26.3917 8.54481C28.7358 7.50183 36.6856 4.16427 36.6856 4.16427C36.6856 4.16427 40.3547 2.70408 40.0489 6.25024C39.947 7.71042 39.1316 12.8211 38.3163 18.3489L35.7683 34.7238C35.7683 34.7238 35.5644 37.1227 33.8318 37.5399C32.0992 37.9571 29.2454 36.0797 28.7358 35.6625C28.3281 35.3496 21.0918 30.6562 18.4419 28.3616C17.7285 27.7358 16.9131 26.4842 18.5438 25.024C22.2129 21.5822 26.5955 17.3059 29.2454 14.5941C30.4685 13.3426 31.6915 10.4222 26.5955 13.9683L12.2248 23.8767C12.2248 23.8767 10.5941 24.9197 7.53646 23.981C4.47886 23.0423 0.911662 21.7908 0.911662 21.7908C0.911662 21.7908 -1.53442 20.2263 2.6443 18.5575Z" fill="white"></path>
+            </svg>
+          </div>
+          <div class="social-link-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <path d="M47.5 32.4998V12.4998H27.5" stroke="white" stroke-width="1.875" stroke-linecap="round"/>
+              <path d="M47.5 12.5002L12.5 47.5002" stroke="white" stroke-width="1.875" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <h3 class="social-card-title">TELEGRAM</h3>
+        <div class="social-card-stats">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" class="stats-icon">
+            <path d="M5.33331 26.6666C5.33331 22.6666 10.6666 22.6666 13.3333 19.9999C14.6666 18.6666 10.6666 18.6666 10.6666 11.9999C10.6666 7.55592 12.444 5.33325 16 5.33325C19.556 5.33325 21.3333 7.55592 21.3333 11.9999C21.3333 18.6666 17.3333 18.6666 18.6666 19.9999C21.3333 22.6666 26.6666 22.6666 26.6666 26.6666" stroke="white" stroke-linecap="round"/>
+          </svg>
+          <!--          <span class="stats-value">34K+</span>-->
+        </div>
+      </a>
+    </div>
+
+    <div class="tokenomics-cta tokenomics-cta_footer">
+      <a href="https://sunpump.meme/token/TP7r1pDoS1snMjEJE1kE17GRt3Df4mYuZz" target="_blank" class="buy-tokens-btn">BUY TOKENS</a>
+    </div>
+
+    <footer id="footer" class="footer">
+      <img
+        src="/images/logo.png"
+        srcset="/images/logo@2x.png 2x, /images/logo@3x.png 3x"
+        alt="Logo"
+        class="footer-image"
+      >
+      <p>&copy; 2024 vikita.xyz</p>
     </footer>
-    <!-- footer -->
+  </div>
+</section>
 
-    <!--jQuery, Bootstrap and other vendor JS-->
-    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="/js/jquery-migrate-1.4.1.min.js"></script>
-    <script type="text/javascript" src="/js/popper.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
-  </body>
+
+<!-- footer -->
+
+<!-- footer -->
+
+<!--jQuery, Bootstrap and other vendor JS-->
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/simplebar.min.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
+</body>
 </html>

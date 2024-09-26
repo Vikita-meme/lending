@@ -1172,6 +1172,10 @@ a.tech-tag:hover {
   width: auto;
 }
 
+.tokenomics-cta_footer {
+  display: none;
+}
+
 @media (max-width: 991px) {
 
   .header {
