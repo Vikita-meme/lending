@@ -1134,7 +1134,7 @@ a.tech-tag:hover {
 }
 
 .social-card-stats {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: flex-start;
   gap: 5px;
@@ -1521,7 +1521,6 @@ a.tech-tag:hover {
   }
 
   .social-card-stats {
-    display: none;
     margin-top: 0;
     gap: 7px;
   }
