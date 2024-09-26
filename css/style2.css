@@ -1521,6 +1521,7 @@ a.tech-tag:hover {
   }
 
   .social-card-stats {
+    display: none;
     margin-top: 0;
     gap: 7px;
   }
