@@ -184,6 +184,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 
 .header_toggler {
   display: none;
+  z-index: 99999;
 }
 
 .navbar-light {
@@ -696,11 +697,21 @@ a.tech-tag:hover {
 /* start mini-app */
 .mini-app-section {
   background-color: #EDEEF1;
-  background-image: url("../images/mini-app_bg.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
+
+.mini-app-image_bg_lg {
+  display: block;
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  margin-top: 77px;
+}
+
+.mini-app-image_lg {
+  width: 100%;
+  height: auto;
+}
+
 .mini-app-content {
   display: flex;
   flex-direction: column;
@@ -1311,6 +1322,10 @@ a.tech-tag:hover {
     height: 64px;
   }
 
+  .mini-app-image_bg_lg {
+    display: none;
+  }
+
   .mini-app-section {
     background: #EDEEF1;
     background-image: none;
@@ -1358,6 +1373,10 @@ a.tech-tag:hover {
 
   .mini-app-image_bg {
     padding: 0 50px;
+  }
+
+  .mini-app-description {
+    width: 100%;
   }
 
   .tokenomics-details {
@@ -1565,7 +1584,7 @@ a.tech-tag:hover {
   }
 
   .hero-title {
-    font-size: 52px;
+    font-size: 44px;
     text-align: center;
   }
 
