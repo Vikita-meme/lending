@@ -83,9 +83,13 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
 .nav-link {
   align-self: stretch;
   padding: 0;
-  margin: .5rem 0.6rem 0.1rem;
+  margin: .5rem 0.7rem 0.1rem;
   padding-bottom: 5px;
   border-bottom: 1px solid transparent;
+}
+
+.nav-links.-small {
+  margin: .5rem 0.5rem 0.1rem;
 }
 
 .nav-link:hover {
@@ -358,6 +362,10 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   overflow: hidden;
 }
 
+.hero-title.-small {
+  font-size: 84px;
+}
+
 .hero-title_black {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
@@ -385,6 +393,11 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   line-height: 140%;
   width: 264px;
 }
+
+.hero-subtitle.-small {
+  font-size: 19px;
+}
+
 .cta-button {
   display: inline-block;
   outline: none;
@@ -506,6 +519,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: start;
+  flex: 1;
 }
 
 .about-title {
@@ -517,6 +531,10 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
+}
+
+.about-title.-small {
+  font-size: 98px;
 }
 
 .about-title_black {
@@ -589,6 +607,10 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
+}
+
+.features-title.-small {
+  font-size: 116px;
 }
 
 .features-title_black {
@@ -703,7 +725,9 @@ a.tech-tag:hover {
 }
 
 .mini-app-image_bg_lg {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   position: absolute;
   width: 45%;
   height: 100%;
@@ -741,6 +765,10 @@ a.tech-tag:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
+}
+
+.mini-app-title.-small {
+  font-size: 88px;
 }
 
 .mini-app-image {
@@ -1008,6 +1036,7 @@ a.tech-tag:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+  padding-right: 0.5rem;
 }
 /* start roadmap */
 
@@ -1036,6 +1065,10 @@ a.tech-tag:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
+}
+
+.cta-title.-small {
+  font-size: 58px;
 }
 
 .cta-title_black {
@@ -1280,7 +1313,7 @@ a.tech-tag:hover {
     font-size: 16px;
     line-height: 140%;
     width: 100%;
-    padding: 0 116px;
+    padding: 0;
   }
 
   .join-community-btn {
@@ -1547,6 +1580,30 @@ a.tech-tag:hover {
 
   .footer-image {
     height: 24px;
+  }
+
+  .hero-title.-small {
+    font-size: 62px;
+  }
+
+  .hero-subtitle.-small {
+    font-size: 16px;
+  }
+
+  .about-title.-small {
+    font-size: 70px;
+  }
+
+  .features-title.-small {
+    font-size: 80px;
+  }
+
+  .mini-app-title.-small {
+    font-size: 80px;
+  }
+
+  .cta-title.-small {
+    font-size: 58px;
   }
 }
 
@@ -1842,5 +1899,29 @@ a.tech-tag:hover {
 
   .footer {
     margin-top: 58px;
+  }
+
+  .hero-title.-small {
+    font-size: 44px;
+  }
+
+  .hero-subtitle.-small {
+    font-size: 16px;
+  }
+
+  .about-title.-small {
+    font-size: 44px;
+  }
+
+  .features-title.-small {
+    font-size: 44px;
+  }
+
+  .mini-app-title.-small {
+    font-size: 44px;
+  }
+
+  .cta-title.-small {
+    font-size: 29px;
   }
 }
