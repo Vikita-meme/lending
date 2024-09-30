@@ -1704,6 +1704,10 @@ a.tech-tag:hover {
     background-image: url(../images/about_bg_sm.png);
   }
 
+  .about-vikita {
+    display: none;
+  }
+
   .about-title {
     font-size: 44px;
   }
